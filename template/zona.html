@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#061031">
+<link rel="icon" type="image/webp" href="/assets/mark.webp">
+<title>{{nombre}} · Información ampliada de la zona · PropHero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--navy:#061031;--navy-d:#03081F;--navy-l:#2A46B8;--blue:#0D35F0;--blue-l:#7D96FB;--blue-mid:#3355F5;--body:#4B5771;--muted:#8B93A6;--cream:#F4F6FB;--cream-d:#E7ECF7;--rule:#DCE2EF;--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:#fff;color:var(--body);font-family:var(--font);font-size:clamp(15px,1.05vw,16px);line-height:1.65;font-variant-numeric:tabular-nums;overflow-wrap:break-word}
+b,strong{font-weight:600;color:var(--navy)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:6px}
+h1,h2,h3{color:var(--navy);font-weight:600;letter-spacing:-.03em;line-height:1.14}
+h1{font-size:clamp(32px,5vw,52px);margin:0}h2{font-size:clamp(26px,3.2vw,38px);margin:0 0 16px;max-width:26ch}h3{font-size:17px;margin:0 0 6px}
+p{margin:0 0 14px}
+h1,h2,h3,p,td,th,.l{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,5vw,64px)}
+.wrap>*,.two>*,.kpis>*,.clocks>*,.sizes>*,.b>*,.y>*{min-width:0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{color:var(--navy);line-height:0;margin-right:auto}.logo svg{height:24px;width:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px;text-decoration:none;background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1px var(--rule)}
+.btn:hover{box-shadow:inset 0 0 0 1px var(--navy)}
+.head{background:var(--cream);padding:48px 0 36px;border-bottom:1px solid var(--rule)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--blue);margin:0 0 14px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--blue);border-radius:2px}
+section{padding:64px 0}
+section.mist{background:var(--cream)}
+.label{font-size:14px;font-weight:600;color:var(--blue);margin:0 0 12px}
+.narrow{max-width:66ch}
+.muted{color:var(--body)}
+.small{font-size:14px}
+.tw{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td{color:var(--navy)}
+th{font-size:12.5px;font-weight:600;color:var(--body);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+td.n{font-weight:600}
+td .sub{display:block;font-size:13px;color:var(--body);margin-top:3px;font-weight:400}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media (max-width:880px){.two{grid-template-columns:1fr;gap:32px}}
+.quote{margin:44px 0 0;padding:30px 34px;border-radius:20px;background:var(--navy);color:#fff;font-size:clamp(21px,2.4vw,28px);font-weight:600;line-height:1.3;letter-spacing:-.02em;position:relative;overflow:hidden}
+.quote::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--blue)}
+.quote small{display:block;font-size:14px;font-weight:400;color:#C7CEE6;margin-top:12px;letter-spacing:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:36px 0}
+.kpis.k3{grid-template-columns:repeat(3,1fr)}
+.kpi{border:1px solid var(--rule);border-radius:16px;padding:22px;background:#fff}
+.kpi b{display:block;font-weight:600;color:var(--navy);font-size:32px;line-height:1.05;letter-spacing:-.03em}
+.kpi span{display:block;font-size:14px;color:var(--body);margin-top:10px;line-height:1.45}
+@media (max-width:860px){.kpis{grid-template-columns:1fr 1fr}.kpis.k3{grid-template-columns:1fr}}
+.map svg{width:100%;height:auto;display:block}
+.map text{font-family:var(--font);font-size:13px;fill:var(--navy);font-weight:600}
+.map .km{font-size:12px;fill:var(--body);font-weight:500}
+.zchart svg{width:100%;height:auto;display:block}
+.zchart text{font-family:var(--font);font-size:12px;fill:var(--body)}
+.bars{display:grid;gap:14px;margin:26px 0 12px}
+.b{display:grid;grid-template-columns:210px 1fr;gap:16px;align-items:center}
+.b .l{font-size:15px;font-weight:600;color:var(--navy);line-height:1.3}
+.b .l small{display:block;font-weight:400;color:var(--body);font-size:13px}
+.b .track{height:40px;border-radius:10px;background:#fff;border:1px solid var(--rule)}
+.b .fill{height:100%;border-radius:10px;background:var(--cream-d);color:var(--navy);display:flex;align-items:center;justify-content:flex-end;padding:0 14px;font-weight:600;font-size:14px;min-width:max-content}
+.b.cy .fill{background:var(--blue);color:#fff}
+.b.mg .fill{background:var(--navy);color:#fff}
+.b.hl .l{color:var(--blue)}
+@media (max-width:640px){.b{grid-template-columns:1fr;gap:6px}}
+.yield{display:grid;gap:12px;margin:0 0 24px}
+.y{display:grid;grid-template-columns:190px 1fr;gap:16px;align-items:center}
+.y .l{font-weight:600;color:var(--navy)}
+.y .track{height:50px;border-radius:12px;background:var(--cream)}
+.y .fill{height:100%;border-radius:12px;background:var(--cream-d);color:var(--navy);display:flex;align-items:center;justify-content:flex-end;padding:0 16px;font-weight:600;font-size:18px}
+.y.us .fill{background:var(--blue);color:#fff}
+@media (max-width:640px){.y{grid-template-columns:1fr;gap:6px}}
+.sizes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.size{border-radius:20px;padding:30px;background:var(--navy);color:#C7CEE6}
+.size.alt{background:#fff;color:var(--body);border:1px solid var(--rule)}
+.size b{display:block;font-size:clamp(52px,6.5vw,80px);font-weight:600;line-height:1;letter-spacing:-.04em;color:#fff}
+.size.alt b{color:var(--blue)}
+.size b small{font-size:.38em;font-weight:500;letter-spacing:0}
+.size p{margin:16px 0 0;font-size:15px}
+@media (max-width:760px){.sizes{grid-template-columns:1fr}}
+.clocks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.clock{border:1px solid var(--rule);border-radius:18px;padding:26px;background:#fff}
+.clock .ctag{font-size:13px;font-weight:600;color:var(--blue);margin:0 0 10px}
+.clock p{font-size:15px;margin:0}
+@media (max-width:880px){.clocks{grid-template-columns:1fr}}
+@media (max-width:520px){.kpi b{font-size:28px}.quote{padding:24px 22px;font-size:20px}.size{padding:24px}.bar .btn span{display:none}}
+.zsub{padding:64px 0}
+footer{background:var(--navy-d);color:#A3ABC4;font-size:13px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:20px;width:auto;color:#fff}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="ph-logo" viewBox="12 12 1801 392"><path fill="currentColor" fill-rule="evenodd" d="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM971,357L971,312L979,319C988,328 998,333 1009,336C1020,338 1042,337 1052,334C1078,325 1097,305 1105,276C1107,267 1107,263 1107,250C1108,225 1103,209 1092,193C1077,171 1054,160 1026,160C1007,160 992,166 979,179C974,184 971,186 971,185C970,185 969,179 968,173L967,162L951,162L935,162L935,282C935,348 935,402 936,402C936,403 944,403 954,403L971,403L971,357ZM844,335C856,333 871,326 880,318C891,308 902,292 906,275C908,269 908,265 908,248C908,231 908,229 906,220C893,181 861,158 818,160C778,162 749,183 738,220C735,230 734,253 736,266C739,287 749,305 764,318C773,325 788,333 800,335C812,338 831,338 844,335ZM1460,335C1484,330 1504,315 1513,292C1515,288 1516,283 1517,281L1517,277L1499,277C1487,277 1481,277 1481,278C1481,281 1475,291 1469,296C1460,305 1446,309 1432,307C1419,305 1413,302 1405,294C1396,286 1393,277 1390,262L1390,257L1455,257L1520,256L1520,244C1520,238 1520,230 1519,226C1514,200 1500,180 1478,169C1465,163 1456,161 1438,161C1419,160 1413,162 1398,168C1377,178 1364,195 1356,219C1354,227 1354,228 1354,248C1354,269 1354,270 1356,278C1366,310 1388,330 1419,335C1430,337 1450,337 1460,335ZM1753,334C1769,329 1785,319 1795,307C1800,300 1808,284 1811,274C1812,269 1812,264 1812,248C1812,230 1812,228 1810,220C1799,184 1771,163 1732,160C1713,159 1693,164 1678,172C1669,178 1657,190 1651,200C1642,215 1638,232 1639,254C1640,269 1642,280 1649,292C1659,313 1675,326 1697,333C1708,336 1713,337 1730,337C1742,336 1747,336 1753,334ZM485,293L485,250L496,250C502,249 516,249 529,249C561,249 573,246 589,236C611,221 622,194 619,164C616,134 599,113 569,103C557,99 546,98 489,98L446,98L446,217L446,336L465,336L484,336L485,293ZM678,319C679,309 679,287 679,269C679,233 680,227 685,217C689,209 697,202 705,199C709,197 713,197 724,196L737,196L737,179L737,162L731,162C721,162 710,164 704,166C696,169 687,176 683,182C681,185 679,187 679,187C678,187 675,167 675,164C675,162 674,162 658,162L642,162L642,248L642,335L651,335C656,335 664,336 669,336L678,336L678,319ZM1176,284L1176,232L1230,232L1284,232L1284,283L1285,335L1299,335C1306,336 1315,336 1318,336L1323,336L1323,217L1323,98L1304,98L1285,98L1284,148L1284,198L1230,198L1176,198L1176,148L1176,98L1156,98L1137,98L1137,216C1137,281 1137,335 1138,335C1138,336 1147,336 1157,336L1176,336L1176,284ZM1582,302C1583,284 1583,262 1583,253C1583,230 1586,218 1595,209C1603,199 1613,196 1631,196L1641,196L1641,179L1641,162L1630,162C1618,163 1611,165 1603,169C1597,172 1589,179 1586,184C1585,185 1583,187 1583,187C1583,186 1582,181 1581,174L1579,162L1562,162L1546,162L1546,248C1546,296 1546,335 1547,335C1547,336 1555,336 1565,336L1582,336L1582,302ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM1014,306C998,303 986,295 978,280C969,263 969,236 977,218C982,208 993,198 1003,195C1021,188 1040,191 1053,204C1061,211 1064,217 1068,226C1070,234 1070,236 1070,248C1070,261 1070,263 1068,271C1063,284 1055,294 1045,300C1036,305 1023,308 1014,306ZM809,305C793,300 781,288 775,271C772,261 771,244 773,233C778,211 794,195 814,192C824,191 835,192 843,196C850,199 861,209 865,217C872,230 874,251 870,266C866,285 851,301 833,305C826,306 815,306 809,305ZM1712,304C1703,301 1698,298 1692,292C1681,281 1677,269 1677,248C1677,236 1677,234 1679,226C1683,217 1685,213 1691,206C1697,200 1702,197 1708,194C1720,190 1737,191 1748,196C1760,202 1771,216 1774,231C1777,239 1777,259 1774,267C1770,282 1761,294 1747,301C1739,305 1738,305 1728,306C1720,306 1716,306 1712,304ZM1395,229C1391,229 1391,228 1394,220C1400,201 1417,190 1438,190C1456,190 1470,198 1478,213C1480,218 1483,228 1483,229C1482,230 1399,230 1395,229ZM485,174L485,132L511,132C526,132 541,132 544,133C559,135 572,145 577,157C579,162 579,165 579,174C579,185 579,186 576,192C573,200 567,206 560,210C550,215 547,215 515,215L485,215L485,174ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z"/></symbol><symbol id="ph-mark" viewBox="12 12 308 392"><path fill="currentColor" fill-rule="evenodd" d="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z"/></symbol></defs></svg>
+<header class="bar"><div class="wrap">
+<a class="logo" href="/" aria-label="PropHero, volver al resumen"><svg viewBox="12 12 1801 392" aria-hidden="true"><use href="#ph-logo"/></svg></a>
+<a class="btn" href="/#zona"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Volver al resumen</span></a>
+</div></header>
+<main>
+<div class="head"><div class="wrap"><p class="eyebrow">{{nombre_completo}}</p><h1>Información ampliada de la zona</h1><p style="margin:14px 0 0;max-width:60ch">{{za_intro}}</p></div></div>
+{{za_secciones}}
+<section><div class="wrap" style="text-align:center"><a class="btn" href="/#zona">Volver al resumen del proyecto</a></div></section>
+</main>
+<footer><div class="wrap"><svg viewBox="12 12 1801 392" role="img" aria-label="PropHero"><use href="#ph-logo"/></svg><span>{{za_pie}}</span></div></footer>
+</body>
+</html>

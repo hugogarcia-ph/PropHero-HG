@@ -123,6 +123,16 @@ Tareas iniciales, en este orden:
 
 - Cifras en euros sin redondear. El redondeo se hace al pintar: M€ con 1 decimal y k€ sin decimales, con formato español (punto de miles y coma decimal).
 - `u` de cada vivienda: portal, planta, nº, m² construidos con comunes, tipología (0 estudio, 1 o 2 hab.), orientación y **precio de mercado**.
+- Claves adicionales (las usa `scripts/build.py`):
+  - `nombre_completo` (p. ej. «Montserrat · Ausias March»: títulos, WhatsApp, pies) y `whatsapp_mensaje` (texto prefijado, sobre *el proyecto*).
+  - `borrador_texto` (texto de la franja amarilla), `pagina.descripcion` (meta description) y `pie` (línea del pie PropHero).
+  - `facts.ubicacion/tipologias/garajes/trasteros/financiacion`, `plan_pagos.desglose` (informativo) y `packs[].pesos` = `[peso de coste, peso de venta]` del cronograma por pack.
+  - `viviendas` (opcional): lista `u` del edificio cuando no hay packs; si falta, se usan las de `packs[].u`.
+  - `edificio`: `texto`, `etiqueta_viviendas` y `nota` de la sección «El edificio» (modo `unico`).
+  - `producto`: `titulo` y `texto` de la galería de renders.
+  - `dossier`: `subtitulo`, `descripcion`, `proyecto_titulo`, `proyecto_texto`, `zona_titulo`, `zona_textos` (2), `zona_cifras` (6), `distancias_titulo`, `eje` (`nombre`, `km`), `fuentes`, `producto_texto` y `pie`.
+  - `zona_ampliada`: `intro`, `pie_fuentes` y `secciones` (`id`, `fondo`, `etiqueta`, `titulo`, `bloques`). Tipos de bloque: `p`, `grupo`, `dos_columnas`, `tabla`, `kpis`, `cita`, `barras`, `rentabilidad`, `tamanos`, `relojes` y `html` (SVG de mapa o gráfico).
+- Cualquier texto puede ser `{"unico": "…", "paquetizado": "…"}` para cambiar de modo sin tocar la plantilla. Los textos admiten HTML en línea (`&nbsp;`, `<b>`).
 
 ---
 

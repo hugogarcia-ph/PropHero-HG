@@ -1,0 +1,290 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/webp" href="/assets/mark.webp"><title>{{nombre_completo}} · Dossier de precomercialización</title>
+<style>
+@page{size:A4;margin:0}
+:root{--navy:#061031;--ink:#0A1438;--blue:#0D35F0;--blue-l:#7D96FB;--body:#4B5771;--muted:#8B93A6;--mist:#F4F6FB;--rule:#DCE2EF;--mist2:#E7ECF7}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:Inter,sans-serif;color:var(--body);font-size:9.6pt;line-height:1.5;font-variant-numeric:lining-nums proportional-nums;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-feature-settings:"ss01","cv11"}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:16mm 16mm 14mm}
+.page:last-child{page-break-after:auto}
+h1,h2,h3{font-family:Inter,sans-serif;color:var(--navy);font-weight:600;letter-spacing:-.02em;line-height:1.08}
+b{color:var(--navy);font-weight:600}
+.foot{position:absolute;left:16mm;right:16mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--muted);border-top:.5pt solid var(--rule);padding-top:3mm}
+.kick{font-size:8.5pt;font-weight:600;color:var(--blue);margin-bottom:3mm}
+.cover{background:var(--navy);color:#C7CEE6;padding:16mm}
+.cover .plan{position:absolute;left:-10mm;right:-10mm;bottom:58mm;height:100mm;background:none center/contain no-repeat;opacity:.55}
+.cover .fade{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,#061031 0%,#061031 46%,rgba(6,16,49,.2) 58%,rgba(6,16,49,0) 64%,rgba(6,16,49,.35) 72%,#061031 79%,#061031 100%)}
+.cover .top{position:relative;display:flex;justify-content:space-between;align-items:center}
+.tag{font-size:7.8pt;font-weight:600;color:#fff;border:.6pt solid rgba(255,255,255,.35);border-radius:20pt;padding:2.2mm 3.6mm}
+.cover .title{position:relative;margin-top:30mm}
+.cover .title p.k{font-size:10pt;color:var(--blue-l);font-weight:500;margin-bottom:5mm}
+.cover h1{color:#fff;font-size:76pt;letter-spacing:-.045em;line-height:.92;font-weight:600}
+.cover .title p.s{font-family:Inter;font-weight:300;font-size:20pt;color:#fff;margin-top:6mm;letter-spacing:-.01em}
+.cover .title p.d{max-width:105mm;margin-top:6mm;font-size:10.5pt;line-height:1.55;color:#C7CEE6}
+.cfig{position:absolute;left:16mm;right:16mm;bottom:16mm;display:grid;grid-template-columns:1.1fr 1.4fr 1.1fr 1fr 1fr;border-top:.8pt solid rgba(255,255,255,.3)}
+.cfig div{padding:5mm 4mm 0 0}
+.cfig div+div{padding-left:4mm;border-left:.5pt solid rgba(255,255,255,.16)}
+.cfig span{display:block;font-size:7.6pt;color:#9FA9CC;font-weight:500}
+.cfig b{display:block;font-family:Inter;color:#fff;font-weight:600;font-size:17pt;letter-spacing:-.02em;margin-top:1.5mm;white-space:nowrap}
+.cfig .big b{font-size:30pt;letter-spacing:-.035em}
+.cfig small{display:block;font-size:7pt;color:#9FA9CC;margin-top:1mm}
+h2{font-size:24pt;max-width:150mm}
+.lead{font-size:11pt;line-height:1.55;color:var(--body);max-width:150mm;margin-top:4mm}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:9mm;margin-top:8mm}
+.mixbar{display:flex;height:9mm;border-radius:2mm;overflow:hidden;margin:3mm 0 3mm}
+.mixbar i{display:flex;align-items:center;padding-left:2.5mm;font-style:normal;font-weight:600;font-size:8pt;color:#fff}
+.leg{display:flex;gap:5mm;font-size:8pt}
+.leg span::before{content:"";display:inline-block;width:2.4mm;height:2.4mm;border-radius:.6mm;margin-right:1.5mm;vertical-align:-.2mm;background:var(--c)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 6mm}
+.facts div{padding:2.6mm 0;border-bottom:.5pt solid var(--rule)}
+.facts span{display:block;font-size:7.5pt;color:var(--muted)}
+.facts b{font-size:10pt}
+hr.sep{border:0;border-top:.5pt solid var(--rule);margin:9mm 0 8mm}
+.zone{display:grid;grid-template-columns:1.05fr 1fr;gap:10mm}
+.zone p{margin-bottom:3mm}
+.zfig{display:grid;grid-template-columns:1fr 1fr;border-top:.8pt solid var(--navy)}
+.zfig div{padding:3.2mm 3mm 3.2mm 0;border-bottom:.5pt solid var(--rule)}
+.zfig div:nth-child(even){padding-left:4mm;border-left:.5pt solid var(--rule)}
+.zfig b{display:block;font-family:Inter;font-size:17pt;letter-spacing:-.02em;font-weight:600}
+.zfig span{font-size:7.8pt;line-height:1.35;display:block;margin-top:.6mm}
+.dist{margin-top:9mm}
+.dist h3{font-size:10.5pt;margin-bottom:6mm}
+.axis{position:relative;height:20mm;margin:0 4mm 0 2mm}
+.axis .ln{position:absolute;left:0;right:0;top:9mm;border-top:1pt solid var(--navy)}
+.axis .o{position:absolute;left:0;top:7.4mm;width:3.4mm;height:3.4mm;border-radius:50%;background:var(--blue);transform:translateX(-50%)}
+.axis .o+span{position:absolute;left:0;top:0;font-size:8pt;font-weight:600;color:var(--blue);transform:translateX(-10%)}
+.axis .p{position:absolute;top:7.9mm;width:2.4mm;height:2.4mm;border-radius:50%;background:#fff;border:1pt solid var(--navy);transform:translateX(-50%)}
+.axis .pl{position:absolute;font-size:7.6pt;color:var(--navy);transform:translateX(-50%);white-space:nowrap;text-align:center;line-height:1.25}
+.axis .pl small{display:block;color:var(--muted);font-size:7pt}
+.src{font-size:7.2pt;color:var(--muted);margin-top:5mm}
+table{width:100%;border-collapse:collapse;margin-top:5mm;font-size:8pt}
+th{font-size:7pt;font-weight:600;color:var(--muted);text-align:left;padding:0 1.5mm 2mm 0;border-bottom:.8pt solid var(--navy)}
+td{border-bottom:.4pt solid var(--rule);color:var(--navy);white-space:nowrap}
+.n{text-align:right;padding-left:1mm}
+th.n{text-align:right;padding-left:1mm}
+tr.tot td{border-top:.8pt solid var(--navy);border-bottom:0;font-weight:700;padding-top:2.4mm}
+.note{font-size:7.4pt;color:var(--muted);margin-top:4mm;max-width:170mm}
+table.comp{font-size:9pt;margin-top:6mm}table.comp td{padding:2.2mm 2mm 2.2mm 0}
+.rg2{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:7mm}.rg2 figure{margin:0}.rg2 .a{grid-column:1/-1}
+.rg2 img{display:block;width:100%;height:58mm;object-fit:cover;border-radius:2.5mm}.rg2 .a img{height:78mm}
+.rg2 figcaption{font-size:7.6pt;margin-top:1.5mm;color:var(--body)}
+.sum{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:8mm;border-top:.8pt solid var(--navy)}
+.sum div{padding:4mm 4mm 4mm 0}
+.sum div+div{padding-left:5mm;border-left:.5pt solid var(--rule)}
+.sum span{font-size:8pt;color:var(--muted);display:block}
+.sum b{font-family:Inter;font-size:20pt;white-space:nowrap;letter-spacing:-.03em;display:block;margin-top:1mm}
+.sum .in b{color:var(--blue)}
+.mult{margin-top:7mm;display:flex;gap:6mm;align-items:center}
+.mult b{white-space:nowrap;font-family:Inter;font-size:28pt;letter-spacing:-.035em;color:var(--navy);font-weight:600}
+.mult p{font-size:10pt;line-height:1.45;color:var(--navy);max-width:95mm}
+.dch{background:#111214;border-radius:3mm;padding:6mm 6mm 4mm;margin-top:8mm}
+.dch-h{display:flex;justify-content:space-between;align-items:center;font-size:7.4pt;color:#B9BDC7;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.dch-h .lg{letter-spacing:0;text-transform:none;font-weight:500;color:#C9CDD5;display:flex;align-items:center;gap:1.5mm}
+.dch-h .lg i{display:inline-block;width:2.6mm;height:2.6mm;border-radius:.6mm;margin-left:3mm}
+.dch-h .lg i.n{background:#EF6F86}.dch-h .lg i.p{background:#6EDC98}.dch-h .lg i.s{background:#4F6BFF}
+.dch-c{position:relative;display:grid;grid-template-columns:repeat(6,1fr);margin-top:2mm}
+.dax{position:absolute;left:0;right:0;border-top:.5pt solid #3A3D44}
+.cc{position:relative}
+.cb{position:absolute;left:50%;transform:translateX(-50%);width:11mm}
+.cb.n{background:linear-gradient(180deg,#EF6F86,#5A2B36);border-radius:0 0 1.6mm 1.6mm}
+.cb.p{background:linear-gradient(0deg,#6EDC98,#2D5C45);border-radius:1.6mm 1.6mm 0 0}
+.cb.s{background:linear-gradient(90deg,#6CC3E3,#3554FF);border-radius:1.6mm 1.6mm 0 0}
+.cv{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;font-weight:700;font-size:8.2pt}
+.cv.n{color:#EF6F86}.cv.p{color:#6EDC98}.cv.s{color:#5B76FF}
+.cq{position:absolute;bottom:0;left:0;right:0;text-align:center;font-size:7.6pt;color:#A1A6B2}
+.cq.s{color:#4F6BFF;font-weight:700}
+.dnote{font-size:7.4pt;color:var(--muted);margin-top:3mm}
+.cta{position:absolute;left:16mm;right:16mm;bottom:40mm;background:var(--navy);border-radius:3mm;padding:9mm 10mm;color:#C7CEE6;display:grid;grid-template-columns:1.3fr 1fr;gap:8mm;align-items:end;overflow:hidden}
+.cta .plan{position:absolute;right:-20mm;top:-6mm;width:140mm;height:70mm;background:none center/contain no-repeat;opacity:.18}
+.cta h3{color:#fff;font-size:19pt;position:relative}
+.cta p{position:relative;margin-top:2.5mm;font-size:9.2pt}
+.cta .c{position:relative;text-align:right}
+.cta .c b{display:block;color:#fff;font-family:Inter;font-size:17pt;letter-spacing:-.01em}
+.cta .c span{font-size:8pt}
+.legal{position:absolute;left:16mm;right:16mm;bottom:19mm;font-size:6.9pt;line-height:1.45;color:var(--muted)}
+.page{background:#fff}.cover{background:var(--navy)!important}
+.lgw{height:15pt;width:auto;display:block}.lgn{height:9pt;width:auto;display:block}
+@media screen{html,body{background:#E7ECF7;overflow-x:hidden}body{padding:72px 0 40px}.page{margin:0 auto 18px;box-shadow:0 10px 40px rgba(6,16,49,.18)}
+.tb{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #DCE2EF;font:500 14px Inter,sans-serif;color:#061031}
+.tb a,.tb button{font:600 14px Inter,sans-serif;border-radius:999px;padding:10px 18px;text-decoration:none;cursor:pointer}
+.tb a{color:#061031;box-shadow:inset 0 0 0 1px #DCE2EF}.tb button{background:#0D35F0;color:#fff;border:0}.tb button[disabled]{opacity:.6;cursor:progress}
+.tb span{color:#4B5771;font-size:13px}
+.tb span a{box-shadow:none;padding:0}
+@media (max-width:820px){.page{transform-origin:top center}}}
+@media print{.tb{display:none}}
+{{#paquetizado}}.rg2.big img{height:70mm}.rg2.big .a img{height:104mm}
+table.pk{table-layout:fixed;font-size:7.8pt;margin-top:6mm}table.pk td{padding:1.3mm 1.5mm 1.3mm 0;overflow:hidden}table.pk th{padding-right:1.5mm}
+table.pk td.mx{white-space:normal;color:var(--body);font-size:7.2pt;line-height:1.25}
+.tb2{height:1.8mm;background:var(--mist2);border-radius:1mm;overflow:hidden}.tb2 i{display:block;height:100%;background:var(--blue);border-radius:1mm}
+{{/paquetizado}}</style></head><body>
+<div class="tb"><a href="/">← Volver a la web</a><span id="st"></span><button type="button" id="dl">Descargar PDF</button></div>
+<section class="page cover">
+<div class="plan"></div><div class="fade"></div>
+<div class="top"><img alt="PropHero" class="lgw" data-c="#FFFFFF"><span class="tag">Precomercialización · rangos estimados</span></div>
+<div class="title">
+<p class="k">Proyecto de inversión · Value Partner</p>
+<h1>{{nombre}}</h1>
+<p class="s">{{d_subtitulo}}</p>
+<p class="d">{{d_descripcion}}</p>
+</div>
+<div class="cfig">
+<div><span>Total investment</span><b>{{d_coste}}</b><small>IVA incluido</small></div>
+<div class="big"><span>Yield estimado</span><b>{{rango_yield}}</b><small>Beneficio sobre inversión sin IVA</small></div>
+<div><span>Beneficio estimado</span><b>{{rango_beneficio}}</b></div>
+<div><span>TIR estimada</span><b>{{rango_tir}}</b></div>
+<div><span>Listas para alquilar</span><b>{{listas_valor}}</b><small>Estimado</small></div>
+</div>
+</section>
+<section class="page">
+<p class="kick">El proyecto</p>
+<h2>{{d_proyecto_titulo}}</h2>
+<div class="proj">
+<div>
+<p>{{d_proyecto_texto}}</p>
+<div class="mixbar">{{d_mixbar}}</div>
+<div class="leg">{{d_leyenda}}</div>
+</div>
+<div class="facts">
+<div><span>Viviendas</span><b>{{d_viviendas_fact}}</b></div>
+<div><span>Superficie construida</span><b>{{m2_total}} m²</b></div>
+<div><span>Garajes</span><b>{{f_garajes}}</b></div>
+<div><span>Trasteros</span><b>{{f_trasteros}}</b></div>
+<div><span>Listas para alquilar</span><b>{{listas_valor}} (estimado)</b></div>
+<div><span>Financiación</span><b>{{f_financiacion}}</b></div>
+</div>
+</div>
+<hr class="sep">
+<p class="kick">Por qué {{nombre}}</p>
+<div class="zone">
+<div>
+{{d_zona_textos}}
+</div>
+<div class="zfig">
+{{d_zona_cifras}}
+</div>
+</div>
+<div class="dist">
+<h3>{{d_distancias_titulo}}</h3>
+<div class="axis">{{d_eje}}
+</div>
+</div>
+<p class="src">{{d_fuentes}}</p>
+<div class="foot"><img alt="PropHero" class="lgn" data-c="#061031"><span>{{d_pie}} · Dossier de precomercialización · {{pg_zona}} / {{pg_total}}</span></div>
+</section>
+{{#unico}}<section class="page">
+<p class="kick">El producto</p>
+<h2>Un edificio completo, en una única operación</h2>
+<p class="lead" style="font-size:9.8pt">{{d_producto_texto}}</p>
+<table class="comp">
+<thead><tr><th>Tipología</th><th class="n">Viviendas</th><th class="n">Superficie media</th><th class="n">Precio medio de mercado</th><th class="n">€/m²</th></tr></thead>
+<tbody>
+{{comp_filas}}
+</tbody>
+<tfoot>{{comp_total}}</tfoot>
+</table>
+<p class="note" style="margin-top:3mm">{{d_nota_comp}}</p>
+{{d_renders}}
+<p class="note">Imágenes orientativas (renders). El mobiliario y la decoración son ilustrativos y no se incluyen en la venta.</p>
+<div class="foot"><img alt="PropHero" class="lgn" data-c="#061031"><span>{{d_pie}} · Dossier de precomercialización · {{pg_producto}} / {{pg_total}}</span></div>
+</section>
+{{/unico}}{{#paquetizado}}<section class="page">
+<p class="kick">El producto</p>
+<h2>{{producto_titulo}}</h2>
+<p class="lead" style="font-size:9.8pt">{{d_producto_texto}}</p>
+{{d_renders_big}}
+<p class="note">Imágenes orientativas (renders). El mobiliario y la decoración son ilustrativos y no se incluyen en la venta.</p>
+<div class="foot"><img alt="PropHero" class="lgn" data-c="#061031"><span>{{d_pie}} · Dossier de precomercialización · {{pg_producto}} / {{pg_total}}</span></div>
+</section>
+<section class="page">
+<p class="kick">Packs</p>
+<h2>El proyecto, también por packs</h2>
+<p class="lead" style="font-size:9.8pt">La opción principal es el proyecto completo. Para quien prefiera una entrada menor, el edificio se divide en {{n_packs}} packs. Inversión con IVA y ventas a precio de mercado, según el modelo financiero.</p>
+<table class="pk">
+<colgroup><col style="width:11%"><col style="width:7%"><col style="width:22%"><col style="width:7%"><col style="width:11%"><col style="width:11%"><col style="width:10%"><col style="width:7%"><col style="width:7%"><col style="width:7%"></colgroup>
+<thead><tr><th>Pack</th><th class="n">Viv.</th><th>Tipologías</th><th class="n">m²</th><th class="n">Inversión</th><th class="n">Ventas</th><th class="n">Beneficio</th><th class="n">Yield</th><th class="n">TIR</th><th></th></tr></thead>
+<tbody>
+{{d_packs_filas}}
+</tbody>
+<tfoot>{{d_packs_total}}</tfoot>
+</table>
+<p class="note" style="margin-top:3mm">{{d_nota_packs}}</p>
+<div class="foot"><img alt="PropHero" class="lgn" data-c="#061031"><span>{{d_pie}} · Dossier de precomercialización · {{pg_packs}} / {{pg_total}}</span></div>
+</section>
+{{/paquetizado}}<section class="page">
+<p class="kick">Plan de pagos</p>
+<h2>Cuándo se aporta y cuándo se recupera</h2>
+<p class="lead">Proyecto completo, IVA incluido, según el modelo financiero.</p>
+<div class="sum">
+<div><span>Aportas</span><b>{{d_aportas}}</b></div>
+<div class="in"><span>Recibes</span><b>{{d_recibes}}</b></div>
+<div><span>Ganancia neta{{d_meses_txt}}</span><b>{{d_ganancia}}</b></div>
+</div>
+<div class="dch"><div class="dch-h"><span>Cronograma de pagos · proyecto completo</span><span class="lg"><i class="n"></i>Negativo<i class="p"></i>Positivo<i class="s"></i>Subtotal</span></div>{{d_cron}}</div><p class="dnote">Flujos trimestrales del modelo financiero, IVA incluido. El subtotal es el resultado neto de caja.</p>{{d_mult}}
+<div class="cta"><div class="plan"></div>
+<div><h3>¿Te enviamos el proyecto completo?</h3><p>Te mandamos el modelo financiero y la presentación, y resolvemos tus dudas.</p></div>
+<div class="c"><span>Escríbenos por WhatsApp</span><b>{{d_telefono}}</b></div>
+</div>
+<p class="legal"><b style="color:var(--body)">Precomercialización.</b> Las cifras principales se muestran en rangos estimados; {{#unico}}el plan de pagos y la composición{{/unico}}{{#paquetizado}}el plan de pagos y los packs{{/paquetizado}}, según el modelo financiero. Todas son provisionales y van a variar hasta cerrar los números del proyecto. Este documento no constituye una oferta vinculante ni asesoramiento financiero, fiscal o legal.</p>
+<div class="foot"><img alt="PropHero" class="lgn" data-c="#061031"><span>{{d_pie}} · Dossier de precomercialización · {{pg_pagos}} / {{pg_total}}</span></div>
+</section>
+<script>
+const LOGO="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM971,357L971,312L979,319C988,328 998,333 1009,336C1020,338 1042,337 1052,334C1078,325 1097,305 1105,276C1107,267 1107,263 1107,250C1108,225 1103,209 1092,193C1077,171 1054,160 1026,160C1007,160 992,166 979,179C974,184 971,186 971,185C970,185 969,179 968,173L967,162L951,162L935,162L935,282C935,348 935,402 936,402C936,403 944,403 954,403L971,403L971,357ZM844,335C856,333 871,326 880,318C891,308 902,292 906,275C908,269 908,265 908,248C908,231 908,229 906,220C893,181 861,158 818,160C778,162 749,183 738,220C735,230 734,253 736,266C739,287 749,305 764,318C773,325 788,333 800,335C812,338 831,338 844,335ZM1460,335C1484,330 1504,315 1513,292C1515,288 1516,283 1517,281L1517,277L1499,277C1487,277 1481,277 1481,278C1481,281 1475,291 1469,296C1460,305 1446,309 1432,307C1419,305 1413,302 1405,294C1396,286 1393,277 1390,262L1390,257L1455,257L1520,256L1520,244C1520,238 1520,230 1519,226C1514,200 1500,180 1478,169C1465,163 1456,161 1438,161C1419,160 1413,162 1398,168C1377,178 1364,195 1356,219C1354,227 1354,228 1354,248C1354,269 1354,270 1356,278C1366,310 1388,330 1419,335C1430,337 1450,337 1460,335ZM1753,334C1769,329 1785,319 1795,307C1800,300 1808,284 1811,274C1812,269 1812,264 1812,248C1812,230 1812,228 1810,220C1799,184 1771,163 1732,160C1713,159 1693,164 1678,172C1669,178 1657,190 1651,200C1642,215 1638,232 1639,254C1640,269 1642,280 1649,292C1659,313 1675,326 1697,333C1708,336 1713,337 1730,337C1742,336 1747,336 1753,334ZM485,293L485,250L496,250C502,249 516,249 529,249C561,249 573,246 589,236C611,221 622,194 619,164C616,134 599,113 569,103C557,99 546,98 489,98L446,98L446,217L446,336L465,336L484,336L485,293ZM678,319C679,309 679,287 679,269C679,233 680,227 685,217C689,209 697,202 705,199C709,197 713,197 724,196L737,196L737,179L737,162L731,162C721,162 710,164 704,166C696,169 687,176 683,182C681,185 679,187 679,187C678,187 675,167 675,164C675,162 674,162 658,162L642,162L642,248L642,335L651,335C656,335 664,336 669,336L678,336L678,319ZM1176,284L1176,232L1230,232L1284,232L1284,283L1285,335L1299,335C1306,336 1315,336 1318,336L1323,336L1323,217L1323,98L1304,98L1285,98L1284,148L1284,198L1230,198L1176,198L1176,148L1176,98L1156,98L1137,98L1137,216C1137,281 1137,335 1138,335C1138,336 1147,336 1157,336L1176,336L1176,284ZM1582,302C1583,284 1583,262 1583,253C1583,230 1586,218 1595,209C1603,199 1613,196 1631,196L1641,196L1641,179L1641,162L1630,162C1618,163 1611,165 1603,169C1597,172 1589,179 1586,184C1585,185 1583,187 1583,187C1583,186 1582,181 1581,174L1579,162L1562,162L1546,162L1546,248C1546,296 1546,335 1547,335C1547,336 1555,336 1565,336L1582,336L1582,302ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM1014,306C998,303 986,295 978,280C969,263 969,236 977,218C982,208 993,198 1003,195C1021,188 1040,191 1053,204C1061,211 1064,217 1068,226C1070,234 1070,236 1070,248C1070,261 1070,263 1068,271C1063,284 1055,294 1045,300C1036,305 1023,308 1014,306ZM809,305C793,300 781,288 775,271C772,261 771,244 773,233C778,211 794,195 814,192C824,191 835,192 843,196C850,199 861,209 865,217C872,230 874,251 870,266C866,285 851,301 833,305C826,306 815,306 809,305ZM1712,304C1703,301 1698,298 1692,292C1681,281 1677,269 1677,248C1677,236 1677,234 1679,226C1683,217 1685,213 1691,206C1697,200 1702,197 1708,194C1720,190 1737,191 1748,196C1760,202 1771,216 1774,231C1777,239 1777,259 1774,267C1770,282 1761,294 1747,301C1739,305 1738,305 1728,306C1720,306 1716,306 1712,304ZM1395,229C1391,229 1391,228 1394,220C1400,201 1417,190 1438,190C1456,190 1470,198 1478,213C1480,218 1483,228 1483,229C1482,230 1399,230 1395,229ZM485,174L485,132L511,132C526,132 541,132 544,133C559,135 572,145 577,157C579,162 579,165 579,174C579,185 579,186 576,192C573,200 567,206 560,210C550,215 547,215 515,215L485,215L485,174ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z";
+function blueprintPNG(){
+const W=860,H=560,S=2,c=document.createElement('canvas');c.width=W*S;c.height=H*S;const x=c.getContext('2d');x.scale(S,S);
+const G={L:[],F:[],T:[]};
+const R=(a,b,w,h,g)=>G[g||'L'].push(['r',a,b,w,h]);
+const Ln=(a,b,c2,d,g)=>G[g||'L'].push(['l',a,b,c2,d]);
+const C=(a,b,r,g)=>G[g||'F'].push(['c',a,b,r]);
+const P=(d,g,dash,lw)=>G[g||'L'].push(['p',d,dash,lw]);
+P('M20 12H840V520L815 548H45L20 520Z','L',0,2.4);P('M26 18H834V517L812 542H48L26 517Z');
+R(130,112,575,14,'T');R(130,426,575,14,'T');
+P('M190 232H660V320H190Z','L',0,1.6);P('M190 232L660 320M660 232L190 320','T',[7,6]);
+for(const y of [128,328]){R(385,y,80,96);for(let i=0;i<9;i++)Ln(395,y+20+i*7,455,y+20+i*7,'F');R(395,y+16,60,66,'F');R(388,y+4,34,12,'F');R(428,y+4,34,12,'F');}
+R(385,232,80,88);P('M385 232l80 88M465 232l-80 88','T');
+function units(x0,x1,y0,y1,f){const n=Math.round((x1-x0)/40),w=(x1-x0)/n;for(let i=0;i<n;i++){const X=x0+i*w;R(X,y0,w,y1-y0);
+ const by=f?y1-34:y0+6;R(X+5,by,w*.55,26,'F');R(X+5+w*.55-8,by+3,6,20,'F');
+ const ky=f?y0+6:y1-14;R(X+4,ky,w-8,8,'F');for(let k=0;k<3;k++)C(X+10+k*9,ky+4,2.2);
+ const bx=X+w-16,bb=f?y0+22:y1-46;R(bx,bb,13,22,'F');for(let g=1;g<4;g++)Ln(bx,bb+g*5.5,bx+13,bb+g*5.5,'T');C(bx+6.5,bb+16,3.4);
+ const ay=f?y0:y1;P(`M${X+w-2} ${ay}h-9a9 9 0 0 1 9 9z`,'F');R(X+w*.3,(y0+y1)/2-6,w*.35,12,'F');}}
+units(130,385,18,112,0);units(465,705,18,112,0);units(130,385,126,226,1);units(465,705,126,226,1);
+units(130,385,326,426,0);units(465,705,326,426,0);units(130,385,440,542,1);units(465,705,440,542,1);
+function side(x0,x1){const d=x1-x0;for(const [a,b] of [[18,112],[112,200],[200,280],[280,360],[360,445],[445,540]]){R(x0,a,d,b-a);R(x0+8,a+8,d*.4,(b-a)*.45,'F');R(x0+d*.55,a+10,d*.32,(b-a)*.3,'F');Ln(x0+d*.5,a,x0+d*.5,a+(b-a)*.6);R(x0+d*.62,b-26,22,16,'F');C(x0+d*.62+8,b-18,3.3);for(let k=0;k<2;k++)R(x0+12+k*16,b-20,10,10,'F');}}
+side(26,130);side(705,834);
+for(let X=40;X<830;X+=26){Ln(X,12,X+16,12,'T');Ln(X,548,X+16,548,'T');}
+const st={L:[1.25,1],F:[.8,.85],T:[.7,.7]};x.strokeStyle='#fff';x.lineJoin='round';
+for(const g of ['L','F','T']){x.globalAlpha=st[g][1];for(const o of G[g]){x.lineWidth=st[g][0];x.setLineDash([]);
+ if(o[0]==='r')x.strokeRect(o[1],o[2],o[3],o[4]);
+ else if(o[0]==='l'){x.beginPath();x.moveTo(o[1],o[2]);x.lineTo(o[3],o[4]);x.stroke();}
+ else if(o[0]==='c'){x.beginPath();x.arc(o[1],o[2],o[3],0,Math.PI*2);x.stroke();}
+ else{if(o[2])x.setLineDash(o[2]);if(o[3])x.lineWidth=o[3];x.stroke(new Path2D(o[1]));}}}
+x.globalAlpha=.9;x.fillStyle='#fff';x.setLineDash([]);
+for(const X of [26,130,250,385,465,590,705,834])for(const Y of [18,112,226,326,426,540])x.fillRect(X-3.5,Y-3.5,7,7);
+return c.toDataURL('image/png');}
+function logoPNG(col){const c=document.createElement('canvas');c.width=900;c.height=196;const x=c.getContext('2d');x.scale(.5,.5);x.translate(-12,-12);x.fillStyle=col;x.fill(new Path2D(LOGO),'evenodd');return c.toDataURL('image/png');}
+(function(){
+const P='url("'+blueprintPNG()+'")';document.querySelectorAll('.plan').forEach(e=>e.style.backgroundImage=P);
+document.querySelectorAll('img[data-c]').forEach(i=>i.src=logoPNG(i.dataset.c));
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+const b=document.getElementById('dl'),st=document.getElementById('st');
+function fit(){const w=Math.min(1,(innerWidth-24)/793.7);document.querySelectorAll('.page').forEach(p=>{p.style.transform=w<1?`scale(${w})`:'';p.style.marginBottom=w<1?(18-1123*(1-w))+'px':''});}
+addEventListener('resize',fit);fit();
+async function go(){
+ b.disabled=true;st.textContent='Generando PDF…';
+ try{if(!window.jspdf||!window.html2canvas)throw new Error('libs');await document.fonts.ready;
+  const pages=[...document.querySelectorAll('.page')];const pdf=new jspdf.jsPDF({unit:'mm',format:'a4',compress:true});
+  for(let i=0;i<pages.length;i++){const p=pages[i];const t=p.style.transform;p.style.transform='';
+   const c=await html2canvas(p,{scale:2.2,useCORS:true,backgroundColor:'#ffffff',windowWidth:900});p.style.transform=t;
+   if(i)pdf.addPage();pdf.addImage(c.toDataURL('image/jpeg',.92),'JPEG',0,0,210,297,undefined,'FAST');st.textContent=`Generando PDF… ${i+1}/${pages.length}`;}
+  const url=pdf.output('bloburl');const a=document.createElement('a');a.href=url;a.download='{{d_archivo}}';document.body.appendChild(a);a.click();a.remove();st.innerHTML='PDF listo. Si no se ha descargado, <a href="'+url+'" download="{{d_archivo}}" style="color:#0D35F0;font-weight:600">pulsa aquí</a>.';
+ }catch(e){st.innerHTML='No se ha podido generar automáticamente. <a href="#" onclick="print();return false">Imprimir → Guardar como PDF</a>';console.error(e);}
+ b.disabled=false;fit();}
+b.onclick=go;
+if(new URLSearchParams(location.search).has('dl')){if(document.readyState==='complete')setTimeout(go,400);else addEventListener('load',()=>setTimeout(go,400));}
+})();
+</script>
+</body></html>

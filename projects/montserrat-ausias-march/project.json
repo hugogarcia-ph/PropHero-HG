@@ -1,0 +1,930 @@
+{
+ "slug": "ausiasmarchmontserrat",
+ "nombre": "Montserrat",
+ "nombre_completo": "Montserrat · Ausias March",
+ "subtitulo": "Ausias March · 168 viviendas",
+ "lede": {"unico": "Finalización de un edificio residencial en Montserrat (Ribera Alta, València): 168 viviendas compactas con garaje, en una única operación: el edificio completo.", "paquetizado": "Finalización de un edificio residencial en Montserrat (Ribera Alta, València): 168 viviendas compactas con garaje, disponibles para el proyecto completo o por packs."},
+ "facts": {"ubicacion": "C/ Ausias March, José Iturbi y Sierra Mariola", "tipologias": "119 estudios · 31 de 1 dorm. · 18 de 2 dorm.", "garajes": 168, "trasteros": 89, "financiacion": "Sin financiación"},
+ "modo": "unico",
+ "borrador": true,
+ "borrador_texto": "Borrador de plantilla · cifras provisionales pendientes del modelo final (comercialización a 24 meses)",
+ "rangos": {"yield": "18–22 %", "tir": "16–20 %", "beneficio": "2,3–2,8 M€"},
+ "listas_para_alquilar": {"valor": "4T 2027", "nota": "Estimado, a fin de obra"},
+ "whatsapp": "34650522730",
+ "whatsapp_mensaje": "Hola, quiero información sobre el proyecto de inversión Montserrat · Ausias March.",
+ "proyecto": {"coste_iva": 14457101, "coste_sin_iva": 12673602, "ventas": 15540663, "tir": 0.1939},
+ "plan_pagos": {
+  "aportas": 14457101,
+  "recibes": 17324161,
+  "ganancia_neta": 2867061,
+  "desglose": {"aportacion_inicial": 10604610, "obra": 3852491, "arras": 1554066, "venta": 15770095}
+ },
+ "cronograma": {
+  "trimestres": ["Q1 2027", "Q2 2027", "Q3 2027", "Q4 2027", "Q1 2028"],
+  "costes": [-11292078.0, -1802160.0, -1031202.0, -331660.8, 1783498.9],
+  "cobros": [0.0, 0.0, 0.0, 1554066.26, 13986596.33]
+ },
+ "packs": [
+  {
+   "id": 1,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 305,
+   "c": 529110,
+   "v": 553929,
+   "b": 90721,
+   "r": 0.1959,
+   "t": 0.1666,
+   "pesos": [0.03659859, 0.03564383],
+   "u": [
+    ["A", "Baja", "2", 38.8, 0, "Interior patio", 58100],
+    ["A", "Baja", "6", 38.8, 0, "Interior patio", 58000],
+    ["A", "Ático", "56", 43.1, 0, "Exterior", 132400],
+    ["B", "1ª", "18", 38.8, 0, "Interior patio", 61100],
+    ["B", "2ª", "43", 50.7, 0, "Interior calle", 86000],
+    ["C", "1ª", "17", 41.0, 0, "Interior patio", 67400],
+    ["C", "2ª", "28", 53.7, 0, "Interior calle", 91000]
+   ]
+  },
+  {
+   "id": 2,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 319,
+   "c": 559495,
+   "v": 575318,
+   "b": 85950,
+   "r": 0.1756,
+   "t": 0.1484,
+   "pesos": [0.03870033, 0.03702014],
+   "u": [
+    ["A", "Baja", "3", 38.8, 0, "Interior patio", 58000],
+    ["A", "1ª", "30", 38.8, 0, "Interior patio", 61100],
+    ["A", "Ático", "55", 43.1, 0, "Exterior", 132400],
+    ["B", "1ª", "19", 38.8, 0, "Interior patio", 61100],
+    ["B", "1ª", "24", 38.8, 0, "Interior calle", 64000],
+    ["B", "2ª", "41", 38.8, 0, "Interior calle", 67000],
+    ["C", "Baja", "11", 41.0, 0, "Interior patio", 61200],
+    ["C", "2ª", "32", 41.0, 0, "Interior calle", 70600]
+   ]
+  },
+  {
+   "id": 3,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 321,
+   "c": 573787,
+   "v": 593576,
+   "b": 91556,
+   "r": 0.1824,
+   "t": 0.1545,
+   "pesos": [0.03968894, 0.038195],
+   "u": [
+    ["A", "Baja", "4", 38.4, 0, "Interior patio", 57500],
+    ["A", "Baja", "15", 38.6, 0, "Exterior", 63700],
+    ["A", "1ª", "31", 38.3, 0, "Interior patio", 60400],
+    ["B", "2ª", "40", 38.8, 0, "Interior calle", 67000],
+    ["B", "2ª", "45", 38.8, 0, "Interior calle", 67000],
+    ["B", "Ático", "51", 39.6, 0, "Interior calle", 132400],
+    ["C", "1ª", "25", 41.0, 0, "Interior patio", 64200],
+    ["C", "Ático", "49", 47.5, 0, "Interior patio", 81400]
+   ]
+  },
+  {
+   "id": 4,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 315,
+   "c": 565787,
+   "v": 583356,
+   "b": 88419,
+   "r": 0.1786,
+   "t": 0.1511,
+   "pesos": [0.0391356, 0.03753742],
+   "u": [
+    ["A", "Baja", "5", 38.4, 0, "Interior patio", 57600],
+    ["A", "Baja", "10", 38.8, 0, "Exterior", 64000],
+    ["A", "1ª", "28", 38.8, 0, "Interior patio", 61100],
+    ["B", "1ª", "17", 38.8, 0, "Interior patio", 61100],
+    ["B", "2ª", "32", 38.3, 0, "Interior patio", 66100],
+    ["B", "Ático", "53", 40.2, 0, "Interior calle", 132400],
+    ["C", "2ª", "30", 41.0, 0, "Interior calle", 70600],
+    ["C", "2ª", "31", 41.0, 0, "Interior calle", 70600]
+   ]
+  },
+  {
+   "id": 5,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 313,
+   "c": 543554,
+   "v": 572381,
+   "b": 96387,
+   "r": 0.2025,
+   "t": 0.1726,
+   "pesos": [0.03759773, 0.03683119],
+   "u": [
+    ["A", "Baja", "7", 38.8, 0, "Interior patio", 58000],
+    ["A", "2ª", "47", 38.8, 0, "Interior patio", 66800],
+    ["A", "Ático", "58", 39.6, 0, "Exterior", 132400],
+    ["B", "Baja", "12", 50.7, 0, "Interior calle", 78200],
+    ["B", "2ª", "42", 50.7, 0, "Interior calle", 86000],
+    ["C", "1ª", "16", 53.7, 0, "Interior patio", 86800],
+    ["C", "1ª", "23", 41.0, 0, "Interior patio", 64200]
+   ]
+  },
+  {
+   "id": 6,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 318,
+   "c": 569471,
+   "v": 588062,
+   "b": 89863,
+   "r": 0.1804,
+   "t": 0.1527,
+   "pesos": [0.03939037, 0.03784019],
+   "u": [
+    ["A", "Baja", "11", 38.8, 0, "Exterior", 64000],
+    ["A", "Baja", "14", 38.8, 0, "Exterior", 64000],
+    ["A", "2ª", "45", 38.8, 0, "Interior patio", 66800],
+    ["B", "1ª", "16", 38.8, 0, "Interior patio", 61100],
+    ["B", "1ª", "28", 38.8, 0, "Interior calle", 64000],
+    ["B", "2ª", "37", 38.3, 0, "Interior patio", 66100],
+    ["C", "2ª", "37", 40.6, 0, "Interior patio", 69600],
+    ["C", "Ático", "42", 45.4, 0, "Interior calle", 132400]
+   ]
+  },
+  {
+   "id": 7,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 307,
+   "c": 533728,
+   "v": 559829,
+   "b": 92532,
+   "r": 0.198,
+   "t": 0.1685,
+   "pesos": [0.03691808, 0.0360235],
+   "u": [
+    ["A", "Baja", "12", 50.7, 0, "Exterior", 74200],
+    ["A", "1ª", "18", 42.5, 0, "Exterior", 73200],
+    ["B", "Baja", "6", 38.8, 0, "Interior patio", 58000],
+    ["B", "2ª", "34", 38.8, 0, "Interior patio", 66800],
+    ["C", "1ª", "22", 41.0, 0, "Interior patio", 64200],
+    ["C", "2ª", "29", 53.7, 0, "Interior calle", 91000],
+    ["C", "Ático", "44", 41.7, 0, "Interior calle", 132400]
+   ]
+  },
+  {
+   "id": 8,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 307,
+   "c": 540435,
+   "v": 568397,
+   "b": 95163,
+   "r": 0.2011,
+   "t": 0.1713,
+   "pesos": [0.03738201, 0.03657483],
+   "u": [
+    ["A", "Baja", "13", 50.7, 0, "Exterior", 74200],
+    ["A", "1ª", "22", 42.5, 0, "Exterior", 73200],
+    ["B", "Baja", "10", 38.8, 0, "Interior calle", 61100],
+    ["B", "Ático", "55", 39.4, 0, "Interior calle", 132400],
+    ["C", "1ª", "15", 53.7, 0, "Interior patio", 86800],
+    ["C", "2ª", "38", 41.0, 0, "Interior patio", 70400],
+    ["C", "2ª", "39", 41.0, 0, "Interior patio", 70400]
+   ]
+  },
+  {
+   "id": 9,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 309,
+   "c": 544268,
+   "v": 573293,
+   "b": 96667,
+   "r": 0.2028,
+   "t": 0.1728,
+   "pesos": [0.03764711, 0.03688988],
+   "u": [
+    ["A", "1ª", "19", 42.5, 0, "Exterior", 73200],
+    ["A", "1ª", "23", 42.5, 0, "Exterior", 73200],
+    ["B", "Baja", "13", 50.7, 0, "Interior calle", 78200],
+    ["B", "2ª", "35", 38.8, 0, "Interior patio", 66800],
+    ["B", "2ª", "36", 38.8, 0, "Interior patio", 66800],
+    ["C", "Baja", "3", 53.7, 0, "Interior patio", 82700],
+    ["C", "Ático", "43", 41.7, 0, "Interior calle", 132400]
+   ]
+  },
+  {
+   "id": 10,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 311,
+   "c": 533649,
+   "v": 559727,
+   "b": 92501,
+   "r": 0.198,
+   "t": 0.1685,
+   "pesos": [0.03691256, 0.03601694],
+   "u": [
+    ["A", "1ª", "20", 54.5, 0, "Exterior", 82400],
+    ["A", "1ª", "21", 54.5, 0, "Exterior", 82400],
+    ["B", "2ª", "33", 38.8, 0, "Interior patio", 66800],
+    ["B", "Ático", "54", 40.2, 0, "Interior calle", 132400],
+    ["C", "Baja", "6", 41.0, 0, "Interior calle", 64200],
+    ["C", "Baja", "10", 41.0, 0, "Interior patio", 61200],
+    ["C", "2ª", "40", 41.0, 0, "Interior patio", 70400]
+   ]
+  },
+  {
+   "id": 11,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 321,
+   "c": 573862,
+   "v": 593672,
+   "b": 91586,
+   "r": 0.1824,
+   "t": 0.1545,
+   "pesos": [0.03969413, 0.03820117],
+   "u": [
+    ["A", "1ª", "26", 38.8, 0, "Interior patio", 61000],
+    ["A", "2ª", "49", 38.3, 0, "Interior patio", 66100],
+    ["A", "Ático", "53", 39.6, 0, "Exterior", 132400],
+    ["B", "Baja", "4", 38.4, 0, "Interior patio", 57500],
+    ["B", "Baja", "11", 38.8, 0, "Interior calle", 61100],
+    ["B", "1ª", "27", 38.8, 0, "Interior calle", 64000],
+    ["C", "2ª", "27", 40.8, 0, "Interior calle", 70300],
+    ["C", "Ático", "48", 47.0, 0, "Interior patio", 81400]
+   ]
+  },
+  {
+   "id": 12,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 315,
+   "c": 559091,
+   "v": 574802,
+   "b": 85792,
+   "r": 0.1754,
+   "t": 0.1482,
+   "pesos": [0.03867239, 0.03698694],
+   "u": [
+    ["A", "1ª", "27", 38.8, 0, "Interior patio", 61100],
+    ["A", "1ª", "29", 38.8, 0, "Interior patio", 61100],
+    ["A", "Ático", "54", 39.4, 0, "Exterior", 132400],
+    ["B", "Baja", "5", 38.4, 0, "Interior patio", 57500],
+    ["B", "1ª", "23", 38.8, 0, "Interior calle", 64000],
+    ["B", "2ª", "44", 38.8, 0, "Interior calle", 67000],
+    ["C", "Baja", "12", 41.0, 0, "Interior patio", 61200],
+    ["C", "2ª", "33", 41.0, 0, "Interior calle", 70600]
+   ]
+  },
+  {
+   "id": 13,
+   "n": 8,
+   "mix": {"0": 8},
+   "m2": 320,
+   "c": 576337,
+   "v": 596834,
+   "b": 92557,
+   "r": 0.1835,
+   "t": 0.1555,
+   "pesos": [0.03986535, 0.03840464],
+   "u": [
+    ["A", "2ª", "35", 41.7, 0, "Exterior", 75800],
+    ["A", "2ª", "40", 41.7, 0, "Exterior", 75800],
+    ["A", "2ª", "44", 38.3, 0, "Interior patio", 66100],
+    ["B", "Baja", "14", 38.8, 0, "Interior calle", 61100],
+    ["B", "1ª", "15", 38.3, 0, "Interior patio", 60400],
+    ["B", "Ático", "52", 39.4, 0, "Interior calle", 132400],
+    ["C", "Baja", "9", 41.0, 0, "Interior patio", 61200],
+    ["C", "1ª", "24", 41.0, 0, "Interior patio", 64200]
+   ]
+  },
+  {
+   "id": 14,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 297,
+   "c": 533170,
+   "v": 559115,
+   "b": 92313,
+   "r": 0.1978,
+   "t": 0.1683,
+   "pesos": [0.03687942, 0.03597756],
+   "u": [
+    ["A", "2ª", "36", 41.7, 0, "Exterior", 75800],
+    ["A", "2ª", "39", 41.7, 0, "Exterior", 75800],
+    ["B", "Baja", "7", 38.8, 0, "Interior patio", 58000],
+    ["B", "Ático", "56", 39.6, 0, "Interior calle", 132400],
+    ["C", "Baja", "2", 53.7, 0, "Interior patio", 82700],
+    ["C", "1ª", "14", 40.8, 0, "Interior patio", 67100],
+    ["C", "1ª", "18", 41.0, 0, "Interior calle", 67400]
+   ]
+  },
+  {
+   "id": 15,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 306,
+   "c": 524307,
+   "v": 547793,
+   "b": 88837,
+   "r": 0.1936,
+   "t": 0.1645,
+   "pesos": [0.03626637, 0.03524902],
+   "u": [
+    ["A", "2ª", "37", 53.7, 0, "Exterior", 85500],
+    ["A", "2ª", "38", 53.7, 0, "Exterior", 85500],
+    ["B", "Baja", "2", 38.8, 0, "Interior patio", 58000],
+    ["B", "Baja", "3", 38.8, 0, "Interior patio", 58000],
+    ["B", "1ª", "20", 38.8, 0, "Interior patio", 61100],
+    ["C", "1ª", "19", 41.0, 0, "Interior calle", 67400],
+    ["C", "Ático", "45", 41.7, 0, "Interior calle", 132400]
+   ]
+  },
+  {
+   "id": 16,
+   "n": 7,
+   "mix": {"0": 7},
+   "m2": 300,
+   "c": 532770,
+   "v": 558605,
+   "b": 92157,
+   "r": 0.1976,
+   "t": 0.1681,
+   "pesos": [0.03685181, 0.03594474],
+   "u": [
+    ["A", "2ª", "46", 38.8, 0, "Interior patio", 66800],
+    ["A", "2ª", "48", 38.8, 0, "Interior patio", 66800],
+    ["A", "Ático", "57", 39.4, 0, "Exterior", 132400],
+    ["B", "1ª", "25", 50.7, 0, "Interior calle", 82100],
+    ["B", "1ª", "26", 50.7, 0, "Interior calle", 82100],
+    ["C", "Baja", "4", 41.0, 0, "Interior patio", 64200],
+    ["C", "Baja", "5", 41.0, 0, "Interior patio", 64200]
+   ]
+  },
+  {
+   "id": 17,
+   "n": 4,
+   "mix": {"1": 2, "2": 2},
+   "m2": 289,
+   "c": 488542,
+   "v": 554386,
+   "b": 124875,
+   "r": 0.2907,
+   "t": 0.2522,
+   "pesos": [0.03379255, 0.03567324],
+   "u": [
+    ["A", "2ª", "42", 60.5, 1, "Exterior", 116100],
+    ["A", "Ático", "52", 82.6, 2, "Exterior", 173200],
+    ["B", "1ª", "21", 66.5, 1, "Exterior", 116800],
+    ["C", "Baja", "8", 79.5, 2, "Interior patio", 148400]
+   ]
+  },
+  {
+   "id": 18,
+   "n": 4,
+   "mix": {"1": 3, "2": 1},
+   "m2": 318,
+   "c": 491018,
+   "v": 557548,
+   "b": 125846,
+   "r": 0.2915,
+   "t": 0.2529,
+   "pesos": [0.03396376, 0.03587671],
+   "u": [
+    ["A", "1ª", "17", 71.7, 1, "Exterior", 125600],
+    ["A", "2ª", "34", 71.0, 1, "Exterior", 135100],
+    ["B", "Baja", "1", 70.6, 1, "Exterior", 123600],
+    ["C", "Ático", "41", 104.3, 2, "Exterior", 173200]
+   ]
+  },
+  {
+   "id": 19,
+   "n": 4,
+   "mix": {"2": 1, "1": 3},
+   "m2": 321,
+   "c": 497166,
+   "v": 565402,
+   "b": 128258,
+   "r": 0.2934,
+   "t": 0.2546,
+   "pesos": [0.03438903, 0.03638209],
+   "u": [
+    ["A", "1ª", "32", 71.7, 2, "Exterior", 134300],
+    ["B", "Ático", "47", 93.9, 1, "Exterior", 147700],
+    ["C", "Baja", "1", 74.5, 1, "Exterior", 130200],
+    ["C", "2ª", "26", 80.8, 1, "Exterior", 153200]
+   ]
+  },
+  {
+   "id": 20,
+   "n": 4,
+   "mix": {"1": 3, "2": 1},
+   "m2": 288,
+   "c": 497405,
+   "v": 565708,
+   "b": 128352,
+   "r": 0.2935,
+   "t": 0.2547,
+   "pesos": [0.0344056, 0.03640178],
+   "u": [
+    ["A", "1ª", "25", 65.2, 1, "Exterior", 114500],
+    ["A", "Ático", "63", 71.4, 2, "Exterior", 173200],
+    ["B", "2ª", "38", 85.6, 1, "Exterior", 162100],
+    ["C", "Baja", "7", 66.0, 1, "Interior patio", 116000]
+   ]
+  },
+  {
+   "id": 21,
+   "n": 4,
+   "mix": {"2": 1, "1": 3},
+   "m2": 310,
+   "c": 500040,
+   "v": 569074,
+   "b": 129385,
+   "r": 0.2943,
+   "t": 0.2554,
+   "pesos": [0.03458786, 0.03661837],
+   "u": [
+    ["A", "2ª", "50", 71.2, 2, "Exterior", 133400],
+    ["A", "Ático", "59", 75.2, 1, "Exterior", 147700],
+    ["B", "Ático", "50", 83.1, 1, "Exterior", 147700],
+    ["C", "1ª", "13", 80.5, 1, "Interior patio", 140300]
+   ]
+  },
+  {
+   "id": 22,
+   "n": 5,
+   "mix": {"2": 2, "1": 3},
+   "m2": 314,
+   "c": 536745,
+   "v": 598536,
+   "b": 127094,
+   "r": 0.2696,
+   "t": 0.2331,
+   "pesos": [0.03712675, 0.0385142],
+   "u": [
+    ["A", "Baja", "8", 70.1, 2, "Exterior", 131500],
+    ["A", "Ático", "61", 54.0, 1, "Interior patio", 106900],
+    ["B", "1ª", "22", 71.3, 2, "Exterior", 133500],
+    ["B", "2ª", "46", 64.2, 1, "Exterior", 122800],
+    ["C", "2ª", "35", 54.0, 1, "Exterior", 103900]
+   ]
+  },
+  {
+   "id": 23,
+   "n": 5,
+   "mix": {"2": 2, "1": 3},
+   "m2": 326,
+   "c": 538737,
+   "v": 601080,
+   "b": 127875,
+   "r": 0.2702,
+   "t": 0.2337,
+   "pesos": [0.0372645, 0.0386779],
+   "u": [
+    ["A", "2ª", "43", 60.4, 2, "Exterior", 113900],
+    ["A", "Ático", "62", 54.0, 1, "Interior patio", 106900],
+    ["B", "Baja", "8", 63.5, 1, "Exterior", 111700],
+    ["B", "1ª", "29", 64.2, 1, "Exterior", 113000],
+    ["C", "1ª", "21", 83.5, 2, "Exterior", 155600]
+   ]
+  },
+  {
+   "id": 24,
+   "n": 5,
+   "mix": {"2": 2, "1": 3},
+   "m2": 288,
+   "c": 538946,
+   "v": 601348,
+   "b": 127957,
+   "r": 0.2703,
+   "t": 0.2337,
+   "pesos": [0.03727899, 0.03869512],
+   "u": [
+    ["A", "Baja", "1", 65.0, 2, "Exterior", 123300],
+    ["A", "2ª", "51", 56.5, 1, "Exterior", 108500],
+    ["B", "2ª", "31", 74.9, 2, "Exterior", 140100],
+    ["B", "Ático", "49", 21.5, 1, "Interior patio", 106900],
+    ["C", "1ª", "20", 70.0, 1, "Exterior", 122600]
+   ]
+  },
+  {
+   "id": 25,
+   "n": 5,
+   "mix": {"1": 3, "2": 2},
+   "m2": 308,
+   "c": 539540,
+   "v": 602106,
+   "b": 128190,
+   "r": 0.2705,
+   "t": 0.2339,
+   "pesos": [0.03732005, 0.03874392],
+   "u": [
+    ["A", "Baja", "9", 48.7, 1, "Exterior", 86800],
+    ["A", "1ª", "24", 57.4, 1, "Exterior", 101500],
+    ["B", "2ª", "39", 71.4, 2, "Exterior", 133800],
+    ["B", "Ático", "48", 44.6, 1, "Interior patio", 106900],
+    ["C", "Ático", "47", 86.4, 2, "Exterior", 173200]
+   ]
+  },
+  {
+   "id": 26,
+   "n": 5,
+   "mix": {"1": 3, "2": 2},
+   "m2": 295,
+   "c": 542330,
+   "v": 605670,
+   "b": 129284,
+   "r": 0.2714,
+   "t": 0.2347,
+   "pesos": [0.03751303, 0.03897326],
+   "u": [
+    ["A", "1ª", "33", 56.4, 1, "Exterior", 99700],
+    ["A", "2ª", "41", 56.4, 1, "Exterior", 108400],
+    ["B", "Baja", "9", 67.1, 2, "Exterior", 126100],
+    ["C", "2ª", "36", 50.9, 1, "Interior patio", 98300],
+    ["C", "Ático", "46", 64.2, 2, "Exterior", 173200]
+   ]
+  },
+  {
+   "id": 27,
+   "n": 4,
+   "mix": {"1": 2, "2": 2},
+   "m2": 305,
+   "c": 493812,
+   "v": 561118,
+   "b": 126942,
+   "r": 0.2924,
+   "t": 0.2537,
+   "pesos": [0.03415707, 0.03610643],
+   "u": [
+    ["A", "Baja", "16", 62.3, 1, "Exterior", 109700],
+    ["A", "Ático", "60", 90.1, 2, "Exterior", 173200],
+    ["B", "1ª", "30", 64.2, 1, "Exterior", 113000],
+    ["C", "2ª", "34", 88.8, 2, "Exterior", 165200]
+   ]
+  }
+ ],
+ "edificio": {"texto": "Una sola operación con las 168 viviendas, terminadas y listas para alquilar. Composición y precios medios de mercado según el modelo financiero.", "etiqueta_viviendas": "Viviendas con plaza de garaje", "nota": "Superficies construidas con elementos comunes. Precios medios de mercado por vivienda según el modelo financiero."},
+ "zona": {
+  "titular": "Un municipio que crece junto al eje industrial del sur de València",
+  "texto": "Montserrat, en la Ribera Alta y a unos 30&nbsp;km de València, gana población al 11,6&nbsp;% anual, sobre todo entre los 15 y los 34 años. La demanda de alquiler se concentra en viviendas de una habitación, que se alquilan en 3,4 semanas: el producto de esta promoción.",
+  "distancias": ["València 23 km", "Aeropuerto 18 km", "Almussafes 18 km", "Torrent 15 km"],
+  "kpis": [
+   {"valor": "+11,6 %", "texto": "Crecimiento anual de la población"},
+   {"valor": "8,71 %", "texto": "Rentabilidad bruta del alquiler; España, 6,5&nbsp;%"},
+   {"valor": "179.036 €", "texto": "Precio medio de la vivienda vendida, +9,9&nbsp;% anual"},
+   {"valor": "3,4 sem.", "texto": "Para alquilar una vivienda de 1 habitación"}
+  ],
+  "bloques": [
+   {"etiqueta": "Industria", "titulo": "Automoción y nueva industria", "texto": "A 18&nbsp;km, la planta de Ford en Almussafes prepara un nuevo modelo multienergía de alto volumen. En Sagunt, la gigafactoría de baterías de PowerCo (Volkswagen), con más de 3.000&nbsp;M€ de inversión, arranca la producción de celdas en 2026."},
+   {"etiqueta": "Infraestructuras", "titulo": "Conectado con el área metropolitana", "texto": "Acceso por la CV-405 hacia Torrent y la red de autovías del sur de València, aeropuerto a 18&nbsp;km y el puerto de València como salida logística de la industria de la zona."},
+   {"etiqueta": "Empleo y servicios", "titulo": "Tejido productivo propio", "texto": "Polígonos industriales en el propio municipio, como Font de l'Om, y la cercanía a los grandes polos de empleo del sur metropolitano sostienen la demanda de vivienda en alquiler de trabajadores jóvenes."}
+  ],
+  "fuentes": "Fuentes: Brainsre (2T-2026), Investmap de PropHero, Banco de España, prensa económica (Ford, PowerCo). Distancias aproximadas en línea recta."
+ },
+ "producto": {"titulo": "Viviendas compactas, terminadas y listas para entrar", "texto": "Espacios abiertos con cocina equipada, suelo de madera y mucha luz natural: el producto que busca el inquilino de la zona."},
+ "renders": [
+  {"archivo": "render-estudio.webp", "titulo": "Estudio", "texto": "Dormitorio, cocina y comedor en un único espacio"},
+  {"archivo": "render-cocina-salon.webp", "titulo": "Cocina abierta", "texto": "Cocina lineal con el salón al fondo"},
+  {"archivo": "render-cocina-comedor.webp", "titulo": "Cocina y comedor", "texto": "Zona de día junto a la ventana"}
+ ],
+ "pie": "Montserrat · Ausias March · Dossier de precomercialización, septiembre 2026",
+ "pagina": {
+  "descripcion": {"unico": "Montserrat · Ausias March: 168 viviendas en una única operación. Total investment, yield, beneficio y datos de la zona.", "paquetizado": "Montserrat · Ausias March: 168 viviendas, proyecto completo o por packs. Total investment, yield, beneficio y datos de la zona."}
+ },
+ "dossier": {
+  "subtitulo": "Ausias March, 168 viviendas",
+  "descripcion": {"unico": "Finalización de un edificio residencial en Montserrat, Ribera Alta, a unos 30 km de València. 168 viviendas compactas con garaje, en una única operación: el edificio completo.", "paquetizado": "Finalización de un edificio residencial en Montserrat, Ribera Alta, a unos 30 km de València. 168 viviendas compactas con garaje, para el proyecto completo o por packs."},
+  "proyecto_titulo": "Un edificio que se termina: 168 viviendas listas para alquilar",
+  "proyecto_texto": "El proyecto finaliza un edificio residencial en la esquina de Ausias March, José Iturbi y Sierra Mariola. Todas las viviendas tienen plaza de garaje y 89 tienen trastero. El 71&nbsp;% son estudios: el producto que más falta en el municipio.",
+  "zona_titulo": "Demanda que crece sobre un parque que no está hecho para ella",
+  "zona_textos": ["Montserrat gana población al 11,6&nbsp;% anual, liderada por los tramos de 15 a 34 años, y la renta del hogar sube un 22,2&nbsp;%. El precio transaccionado sube un 23,1&nbsp;% por m² y la renta publicada un 34,6&nbsp;%.", "La vivienda media tiene cinco habitaciones y la ocupan 1,3 personas. Lo más buscado en alquiler es una vivienda de una habitación, que se alquila en 3,4 semanas."],
+  "zona_cifras": [
+   {"valor": "179.036 €", "texto": "Precio medio de la vivienda vendida, +9,9&nbsp;% anual"},
+   {"valor": "8,71 %", "texto": "Rentabilidad bruta del alquiler; España, 6,5&nbsp;%"},
+   {"valor": "+11,6 %", "texto": "Crecimiento anual de la población"},
+   {"valor": "16,8 %", "texto": "Revalorización prevista a 3 años"},
+   {"valor": "3,4 semanas", "texto": "Para alquilar una vivienda de 1 habitación"},
+   {"valor": "5,6 años", "texto": "De renta del hogar para pagar una vivienda; España, 7,7"}
+  ],
+  "distancias_titulo": "A menos de media hora de València y del área metropolitana sur",
+  "eje": [
+   {"nombre": "Picassent", "km": 12},
+   {"nombre": "Torrent", "km": 15},
+   {"nombre": "Aeropuerto y Almussafes", "km": 18},
+   {"nombre": "València", "km": 23}
+  ],
+  "fuentes": "Fuentes: Brainsre, informe de municipio 2T-2026; Investmap de PropHero; Banco de España. Distancias aproximadas en línea recta.",
+  "producto_texto": {"unico": "168 viviendas compactas con garaje, terminadas y listas para alquilar. Composición del edificio y precios medios de mercado según el modelo financiero.", "paquetizado": "168 viviendas compactas con garaje, terminadas y listas para alquilar: espacios abiertos con cocina equipada, suelo de madera y mucha luz natural."},
+  "pie": "Montserrat, Ausias March"
+ },
+ "zona_ampliada": {
+  "intro": "Localización, demanda, precios, rentabilidad, producto, contexto nacional y por qué ahora.",
+  "pie_fuentes": "Fuentes: Brainsre (2T-2026), Investmap de PropHero, Banco de España, BBVA Research",
+  "secciones": [
+   {
+    "id": "tesis-detalle",
+    "etiqueta": "La tesis en una página",
+    "titulo": "Demanda que llega con capacidad de pago, sobre un parque que no está hecho para ella",
+    "bloques": [
+     {
+      "tipo": "dos_columnas",
+      "columnas": [
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {"tipo": "p", "html": "Montserrat ya funciona hoy como mercado residencial. El precio de la vivienda transaccionada sube un 23,1&nbsp;% por m² en un año, la renta publicada un 34,6&nbsp;% y la rentabilidad bruta municipal se sitúa en el 8,71&nbsp;%, desde un precio de entrada todavía asequible."},
+         {"tipo": "p", "html": "La demanda que empuja esos números es nueva. La población crece un 11,6&nbsp;% anual, con los tramos de 15 a 34 años por delante, y la renta media por hogar sube un 22,2&nbsp;%. No es especulación ni uso turístico: el 76&nbsp;% del parque es vivienda principal y solo hay 20 viviendas turísticas en todo el municipio."},
+         {"tipo": "p", "html": "Existe además un desajuste de producto claro. La vivienda media tiene cinco habitaciones y la ocupan 1,3 personas. Lo que más se busca en alquiler es una vivienda de una habitación, y se alquila en 3,4 semanas. Falta oferta compacta y lista para entrar a vivir."}
+        ],
+        "clase": "narrow"
+       },
+       {
+        "tipo": "tabla",
+        "columnas": [
+         {"t": "Resumen de la oportunidad"},
+         {"t": "Cifra", "n": true}
+        ],
+        "filas": [
+         [
+          {"t": "Precio de transacción", "sub": "Vivienda media vendida en el trimestre, +9,9&nbsp;% interanual"},
+          "179.036 €"
+         ],
+         [
+          {"t": "Rentabilidad bruta", "sub": "Sobre el conjunto del parque, frente al 6,5&nbsp;% nacional"},
+          "8,71 %"
+         ],
+         [
+          {"t": "Población", "sub": "Crece un 11,6&nbsp;% anual; 25 a 34 años, +14,3&nbsp;%"},
+          "10.062"
+         ],
+         [
+          {"t": "Revalorización prevista a 3 años", "sub": "Modelo residencial de PropHero · top 20&nbsp;% del ranking"},
+          "16,8 %"
+         ],
+         [
+          {"t": "Distancia a València", "sub": "Por la CV-405 y el área metropolitana sur"},
+          "≈ 30 km"
+         ]
+        ],
+        "estilo": "margin-top:0"
+       }
+      ]
+     },
+     {"tipo": "cita", "texto": "Una vivienda aquí cuesta 5,6 años de renta del hogar. La media española es de 7,7 años.", "fuente": "Periodo de pago de la vivienda media · Brainsre y Banco de España"}
+    ]
+   },
+   {
+    "id": "ubicacion",
+    "fondo": "mist",
+    "etiqueta": "Localización",
+    "titulo": "En la Vall dels Alcalans, a la salida del área metropolitana sur",
+    "bloques": [
+     {
+      "tipo": "dos_columnas",
+      "columnas": [
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {"tipo": "p", "html": "Montserrat está en la Ribera Alta, en el valle que comparte con Real y Montroy. La CV-405 lo une con Picassent, su partido judicial, y con Torrent, la segunda ciudad del área metropolitana. Desde ahí, València, el aeropuerto y los polígonos del sur quedan a menos de media hora.", "clase": "narrow"},
+         {
+          "tipo": "tabla",
+          "columnas": [
+           {"t": "Destino"},
+           {"t": "Distancia", "n": true},
+           {"t": "Relevancia"}
+          ],
+          "filas": [
+           ["Picassent", "12 km", "Partido judicial y servicios comarcales."],
+           ["Torrent", "15 km", "Segunda ciudad del área metropolitana; conexión por la CV-405."],
+           ["Almussafes", "18 km", "Polo industrial del sur de València, con la planta de Ford."],
+           ["Aeropuerto de València", "18 km", "Accesibilidad para el inversor y para inquilinos que se reubican."],
+           ["València", "23 km", "Capital y principal mercado de empleo; unos 30 km por carretera."]
+          ],
+          "nota": {"tipo": "p", "html": "Distancias aproximadas en línea recta.", "clase": "muted small", "estilo": "margin-top:10px"}
+         }
+        ]
+       },
+       {
+        "tipo": "html",
+        "html": "<div class=\"map\">\n<svg viewBox=\"0 0 520 470\" role=\"img\" aria-label=\"Esquema de situación: Montserrat al oeste; Picassent y Torrent al este; València y el aeropuerto al noreste; Almussafes al sureste.\">\n<g stroke=\"var(--body)\" stroke-opacity=\".45\" stroke-width=\"1.5\" stroke-dasharray=\"4 6\" fill=\"none\">\n<line x1=\"70\" y1=\"300\" x2=\"402\" y2=\"88\"/><line x1=\"70\" y1=\"300\" x2=\"272\" y2=\"150\"/><line x1=\"70\" y1=\"300\" x2=\"281\" y2=\"290\"/><line x1=\"70\" y1=\"300\" x2=\"247\" y2=\"50\"/><line x1=\"70\" y1=\"300\" x2=\"347\" y2=\"422\"/>\n</g>\n<g fill=\"var(--navy)\">\n<circle cx=\"402\" cy=\"88\" r=\"9\"/><circle cx=\"272\" cy=\"150\" r=\"6\"/><circle cx=\"281\" cy=\"290\" r=\"6\"/><circle cx=\"247\" cy=\"50\" r=\"6\"/><circle cx=\"347\" cy=\"422\" r=\"6\"/>\n</g>\n<text x=\"416\" y=\"93\">València</text>\n<text x=\"284\" y=\"155\">Torrent</text>\n<text x=\"293\" y=\"295\">Picassent</text>\n<text x=\"259\" y=\"55\">Aeropuerto</text>\n<text x=\"359\" y=\"427\">Almussafes</text>\n<text class=\"km\" x=\"238\" y=\"190\">23 km</text>\n<text class=\"km\" x=\"160\" y=\"214\">15 km</text>\n<text class=\"km\" x=\"190\" y=\"312\">12 km</text>\n<text class=\"km\" x=\"118\" y=\"170\">18 km</text>\n<text class=\"km\" x=\"196\" y=\"378\">18 km</text>\n<g transform=\"translate(40 228)\">\n<path d=\"M30 0C13.4 0 0 13.4 0 30c0 22 30 50 30 50s30-28 30-50C60 13.4 46.6 0 30 0z\" fill=\"var(--navy)\"/>\n<use href=\"#ph-mark\" x=\"17\" y=\"12\" width=\"26\" height=\"33\" style=\"color:#fff\"/>\n</g>\n<text x=\"112\" y=\"258\" style=\"font-size:16px;font-weight:800\">Montserrat</text>\n<text class=\"km\" x=\"112\" y=\"276\">10.062 habitantes</text>\n</svg>\n<p class=\"muted small\">Esquema de situación, no a escala exacta.</p>\n</div>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "demanda",
+    "etiqueta": "La demanda",
+    "titulo": "Un municipio que crece rápido, y crece joven",
+    "bloques": [
+     {
+      "tipo": "kpis",
+      "items": [
+       {"valor": "+11,6 %", "texto": "Habitantes, interanual"},
+       {"valor": "+17,3 %", "texto": "Población de 15 a 24 años"},
+       {"valor": "+22,2 %", "texto": "Renta media por hogar, hasta 33.795&nbsp;€"},
+       {"valor": "7,7 %", "texto": "Tasa de desempleo, un 17,5&nbsp;% menos que hace un año"}
+      ]
+     },
+     {
+      "tipo": "dos_columnas",
+      "columnas": [
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {"tipo": "p", "html": "El crecimiento no es de jubilados que buscan segunda residencia: los tramos que más suben son los de 15 a 24 años (+17,3&nbsp;%) y de 25 a 34 (+14,3&nbsp;%), es decir, los hogares que se forman ahora y buscan su primera vivienda, casi siempre de alquiler."},
+         {"tipo": "p", "html": "Llegan con capacidad de pago. El 67,6&nbsp;% de los declarantes son asalariados, la renta del hogar sube a doble dígito y el desempleo cae. Investmap resume el perfil en una línea: demanda creciente, alquiler que se absorbe en semanas y venta ágil."}
+        ],
+        "clase": "narrow"
+       },
+       {
+        "tipo": "html",
+        "html": "<div class=\"zchart\">\n<p class=\"small muted\" style=\"margin:0 0 8px;font-weight:600\">Evolución, base 100 hace tres años</p>\n<svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"Población y renta media crecen entre un 11 y un 12 por ciento en tres años; el desempleo se mantiene estable.\">\n<g stroke=\"var(--rule)\" stroke-dasharray=\"3 5\">\n<line x1=\"44\" y1=\"30\" x2=\"500\" y2=\"30\"/><line x1=\"44\" y1=\"110\" x2=\"500\" y2=\"110\"/><line x1=\"44\" y1=\"190\" x2=\"500\" y2=\"190\"/>\n</g>\n<text x=\"36\" y=\"34\" text-anchor=\"end\">113</text><text x=\"36\" y=\"114\" text-anchor=\"end\">106</text><text x=\"36\" y=\"194\" text-anchor=\"end\">99</text>\n<polyline fill=\"none\" stroke=\"var(--blue)\" stroke-width=\"3\" stroke-linejoin=\"round\" points=\"60,178 206,138 352,93 498,47\"/>\n<polyline fill=\"none\" stroke=\"var(--blue-l)\" stroke-width=\"3\" stroke-linejoin=\"round\" points=\"60,178 206,116 352,116 498,58\"/>\n<polyline fill=\"none\" stroke=\"var(--muted)\" stroke-dasharray=\"6 5\" stroke-width=\"3\" points=\"60,178 206,178 352,178 498,178\"/>\n<g fill=\"var(--blue)\"><circle cx=\"60\" cy=\"178\" r=\"4\"/><circle cx=\"206\" cy=\"138\" r=\"4\"/><circle cx=\"352\" cy=\"93\" r=\"4\"/><circle cx=\"498\" cy=\"47\" r=\"4\"/></g>\n<g fill=\"var(--blue-l)\"><circle cx=\"206\" cy=\"116\" r=\"4\"/><circle cx=\"352\" cy=\"116\" r=\"4\"/><circle cx=\"498\" cy=\"58\" r=\"4\"/></g>\n<text x=\"60\" y=\"222\" text-anchor=\"middle\">Hace 3 años</text><text x=\"206\" y=\"222\" text-anchor=\"middle\">Hace 2</text><text x=\"352\" y=\"222\" text-anchor=\"middle\">Hace 1</text><text x=\"498\" y=\"222\" text-anchor=\"end\">Actual</text>\n<rect x=\"60\" y=\"243\" width=\"14\" height=\"4\" rx=\"2\" fill=\"var(--blue)\"/><text x=\"80\" y=\"249\">Población</text>\n<rect x=\"164\" y=\"243\" width=\"14\" height=\"4\" rx=\"2\" fill=\"var(--blue-l)\"/><text x=\"184\" y=\"249\">Renta media</text>\n<rect x=\"284\" y=\"243\" width=\"14\" height=\"4\" rx=\"2\" fill=\"var(--muted)\"/><text x=\"304\" y=\"249\">Desempleo</text>\n</svg>\n<p class=\"muted small\">Fuente: Investmap de PropHero (lectura aproximada del gráfico).</p>\n</div>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "precio",
+    "fondo": "mist",
+    "etiqueta": "El precio",
+    "titulo": "Asequible en términos absolutos y subiendo donde importa",
+    "bloques": [
+     {
+      "tipo": "dos_columnas",
+      "columnas": [
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {"tipo": "p", "html": "<b>Sube el volumen y sube el precio.</b> 59 transacciones en el trimestre, un 11,3&nbsp;% más que hace un año, todas de segunda mano. El precio transaccionado por m² sube un 23,1&nbsp;% y el tiempo de venta se ha acortado un 28,7&nbsp;%, hasta 3,97 meses."},
+         {"tipo": "p", "html": "<b>La obra nueva se ha despegado.</b> Lo poco que se publica como obra nueva pide 2.928&nbsp;€/m², un 71,5&nbsp;% más que hace un año y casi el doble de lo que se paga por la vivienda usada. La brecha entre lo que hay y lo que cuesta lo nuevo es la oportunidad."}
+        ],
+        "clase": "narrow"
+       },
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {"tipo": "p", "html": "Precio por vivienda completa", "clase": "small muted", "estilo": "margin:0;font-weight:600"},
+         {
+          "tipo": "barras",
+          "max": 480000,
+          "filas": [
+           {"etiqueta": "Transacciones reales", "sub": "+9,9 % anual", "valor": 179036, "clase": "cy hl"},
+           {"etiqueta": "Publicado · segunda mano", "sub": "+6,0 % anual", "valor": 275249},
+           {"etiqueta": "Publicado · obra nueva", "sub": "+55,2 % anual", "valor": 479850, "clase": "mg"}
+          ]
+         },
+         {"tipo": "p", "html": "Precio por m²", "clase": "small muted", "estilo": "margin:28px 0 0;font-weight:600"},
+         {
+          "tipo": "barras",
+          "max": 2928,
+          "filas": [
+           {"etiqueta": "Publicado · segunda mano", "sub": "+16,7 % anual", "valor": 1353},
+           {"etiqueta": "Transacciones reales", "sub": "+23,1 % anual", "valor": 1594, "clase": "cy hl"},
+           {"etiqueta": "Publicado · obra nueva", "sub": "+71,5 % anual", "valor": 2928, "clase": "mg"}
+          ]
+         },
+         {"tipo": "p", "html": "Fuente: Brainsre, informe de municipio, 2T-2026.", "clase": "muted small"}
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rentabilidad",
+    "etiqueta": "Rentabilidad",
+    "titulo": "Rentabilidad alta sobre un alquiler que se absorbe en semanas",
+    "bloques": [
+     {
+      "tipo": "dos_columnas",
+      "columnas": [
+       {
+        "tipo": "grupo",
+        "bloques": [
+         {
+          "tipo": "rentabilidad",
+          "max": 9.5,
+          "filas": [
+           {"etiqueta": "España", "sub": "media nacional", "valor": 6.5},
+           {"etiqueta": "Montserrat", "sub": "Brainsre, parque completo", "valor": 8.71, "destacada": true},
+           {"etiqueta": "Montserrat", "sub": "Investmap", "valor": 8.9, "destacada": true}
+          ]
+         },
+         {"tipo": "p", "html": "Rentabilidad bruta. Fuente: idealista (España), Investmap y Brainsre (municipio), 2T-2026.", "clase": "muted small"}
+        ]
+       },
+       {
+        "tipo": "tabla",
+        "columnas": [
+         {"t": "Renta mensual publicada"},
+         {"t": "€/mes", "n": true},
+         {"t": "Var. anual", "n": true}
+        ],
+        "filas": [
+         [
+          {"t": "Vivienda de 1 habitación", "sub": "Producto más demandado · Investmap"},
+          "737 €",
+          "—"
+         ],
+         ["Piso de 2 habitaciones", "712 €", "+11,7 %"],
+         ["Casa de 3 habitaciones", "1.093 €", "—"],
+         ["Casa de 4 habitaciones", "1.500 €", "+13,2 %"],
+         ["Media publicada por m²", "9,82 €", "+34,6 %"]
+        ],
+        "estilo": "margin-top:0"
+       }
+      ]
+     },
+     {
+      "tipo": "kpis",
+      "items": [
+       {"valor": "3,4 sem.", "texto": "Para alquilar la vivienda de una habitación"},
+       {"valor": "0 %", "texto": "De anuncios de alquiler con rebaja de precio en el trimestre"},
+       {"valor": "13,8 %", "texto": "Del parque de viviendas está en alquiler"},
+       {"valor": "32,7 %", "texto": "Tasa de esfuerzo del alquiler, frente al 22,1&nbsp;% de la compra"}
+      ]
+     },
+     {"tipo": "p", "html": "Alquilar ya cuesta más esfuerzo que comprar: una renta de 737&nbsp;€ por una vivienda de una habitación supera a la de un piso de dos (712&nbsp;€). El mercado está pagando una prima por el producto pequeño, precisamente el que menos abunda.", "clase": "narrow muted"}
+    ]
+   },
+   {
+    "id": "producto",
+    "fondo": "mist",
+    "etiqueta": "El desajuste de producto",
+    "titulo": "Lo que existe no es lo que se busca",
+    "bloques": [
+     {"tipo": "p", "html": "El parque de Montserrat se construyó para familias grandes y hoy lo ocupan hogares pequeños. El mercado vende y alquila un producto sustancialmente distinto del que se demanda.", "clase": "narrow"},
+     {
+      "tipo": "tamanos",
+      "items": [
+       {"valor": "5", "unidad": "habitaciones", "texto": "Es la vivienda media del municipio, con 1,3 habitantes por vivienda. Lo que se vende tiene 112&nbsp;m² de media: casas grandes y antiguas."},
+       {"valor": "1", "unidad": "habitación", "texto": "Es el producto estrella del alquiler según Investmap, y se alquila en 3,4 semanas. En compra, el más buscado es la casa de menos de 70&nbsp;m².", "alt": true}
+      ]
+     },
+     {"tipo": "cita", "texto": "«En Montserrat no falta gente que quiera vivir aquí. Falta la vivienda del tamaño de su hogar.»"}
+    ]
+   },
+   {
+    "id": "contexto",
+    "etiqueta": "Contexto nacional",
+    "titulo": "Un déficit de oferta que no se corrige en este horizonte",
+    "bloques": [
+     {
+      "tipo": "kpis",
+      "clase": "k3",
+      "items": [
+       {"valor": "750.000", "texto": "Déficit acumulado de vivienda en España, 2021–2025"},
+       {"valor": "240.000", "texto": "Hogares nuevos formados en 2025"},
+       {"valor": "92.000", "texto": "Viviendas terminadas en 2025"}
+      ]
+     },
+     {"tipo": "p", "html": "<b>El efecto expulsión.</b> El Banco de España describe cómo los hogares acaban viviendo donde pueden permitírselo y no donde está el trabajo. Es exactamente el flujo que explica el crecimiento de Montserrat: hogares del área metropolitana que salen de la primera corona buscando precio.", "clase": "narrow"},
+     {"tipo": "p", "html": "Fuente: Banco de España, Informe Anual 2025; BBVA Research, Observatorio Inmobiliario.", "clase": "muted small"}
+    ]
+   },
+   {
+    "id": "ahora",
+    "fondo": "mist",
+    "etiqueta": "Momento de entrada",
+    "titulo": "Por qué ahora",
+    "bloques": [
+     {"tipo": "p", "html": "Tres relojes corren a la vez en esta zona, y los tres van en la misma dirección.", "clase": "narrow muted"},
+     {
+      "tipo": "relojes",
+      "items": [
+       {"etiqueta": "El reloj demográfico", "titulo": "La demanda ya está aquí", "texto": "Un 11,6&nbsp;% más de población en un año, con los tramos jóvenes por delante. Son hogares que necesitan vivienda hoy, no dentro de cinco años."},
+       {"etiqueta": "El reloj de la oferta", "titulo": "La respuesta no puede ser rápida", "texto": "El 100&nbsp;% de lo que se vende es segunda mano y la obra nueva que se publica es cara y escasa. El producto compacto tarda años en llegar desde suelo."},
+       {"etiqueta": "El reloj del precio", "titulo": "Quien entre más tarde pagará más", "texto": "La transacción sube un 23,1&nbsp;% por m² y la renta publicada un 34,6&nbsp;%. Quien entre más tarde pagará más por la misma renta."}
+      ]
+     },
+     {
+      "tipo": "tabla",
+      "columnas": [
+       {"t": "Qué nos haría cambiar de opinión"},
+       {"t": "Lectura"}
+      ],
+      "filas": [
+       ["Freno del crecimiento de población", "Un año de +11,6&nbsp;% puede no repetirse; la demanda de alquiler depende de que siga llegando población joven."],
+       ["Declaración de zona de mercado residencial tensionado", "Limitaría el crecimiento de las rentas, hoy la principal palanca de la zona."],
+       ["Una oleada de obra nueva compacta", "Resolvería la escasez de producto pequeño y reduciría la prima que hoy paga el alquiler de una habitación."],
+       ["Deterioro del empleo en el área metropolitana sur", "Erosionaría la base de inquilinos de larga duración que sostiene el 8,71&nbsp;%."]
+      ],
+      "estilo": "margin-top:56px"
+     },
+     {"tipo": "p", "html": "Ninguna de estas cuatro señales está ocurriendo hoy. Todas son vigilables con datos públicos trimestrales.", "clase": "muted small narrow"}
+    ]
+   }
+  ]
+ }
+}

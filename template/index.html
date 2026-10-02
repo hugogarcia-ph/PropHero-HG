@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#061031">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/webp" href="/assets/mark.webp">
+<title>{{nombre_completo}} · Proyecto de inversión · PropHero</title>
+<meta name="description" content="{{meta_descripcion}}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+--navy:#061031;--navy-d:#03081F;--navy-l:#2A46B8;--blue:#0D35F0;--blue-l:#7D96FB;--blue-mid:#3355F5;--body:#4B5771;--muted:#8B93A6;--cream:#F4F6FB;--cream-d:#E7ECF7;--rule:#DCE2EF;
+--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:#fff;color:var(--body);font-family:var(--font);font-size:clamp(15px,1.05vw,16px);line-height:1.6;font-variant-numeric:tabular-nums;overflow-wrap:break-word}
+b,strong{font-weight:600;color:var(--navy)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:6px}
+h1,h2,h3{color:var(--navy);font-weight:600;letter-spacing:-.03em;line-height:1.12;margin:0}
+p{margin:0 0 12px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,5vw,64px)}
+.wrap>*{min-width:0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{color:var(--navy);line-height:0;margin-right:auto}.logo svg{height:24px;width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;background:var(--blue);color:#fff;font-family:inherit;line-height:1.2;text-align:center}
+.btn:hover{background:var(--blue-mid)}
+.btn.line{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1px var(--rule)}
+.btn.line:hover{box-shadow:inset 0 0 0 1px var(--navy)}
+@media (max-width:520px){.bar .btn.line span{display:none}.bar .btn{padding:10px 14px}}
+section{padding:64px 0}
+.mist{background:var(--cream)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--blue);margin:0 0 14px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--blue);border-radius:2px}
+h2{font-size:clamp(26px,3.2vw,38px);margin:0 0 14px;max-width:26ch}
+.lede{font-size:clamp(16px,1.6vw,18.5px);max-width:58ch;margin:16px 0 0}
+.hero{background:var(--cream);padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+.hero h1{font-size:clamp(40px,6.5vw,76px);line-height:1;letter-spacing:-.04em}
+.hero h1 span{display:block;color:var(--navy-l);font-size:.36em;letter-spacing:-.02em;margin-top:12px;font-weight:500}
+.facts{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:22px;font-size:14px}
+.facts b{margin-left:6px}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.two>*{min-width:0}
+.zk{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.zk div{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:16px}
+.zk b{display:block;font-size:24px;letter-spacing:-.02em}
+.zk span{display:block;font-size:13px;margin-top:4px}
+.dist{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.dist span{font-size:13px;background:#fff;border:1px solid var(--rule);border-radius:999px;padding:5px 12px;color:var(--navy)}
+.src{font-size:12.5px;color:var(--muted);margin-top:14px}
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:16px;background:#fff}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{font-size:12px;font-weight:600;color:var(--body);background:var(--cream)}
+td{color:var(--navy)}
+.n{text-align:right}
+tr.tot td{font-weight:700;background:var(--cream-d)}
+.pp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 18px}
+.pp div{border:1px solid var(--rule);border-radius:16px;padding:18px;background:#fff}
+.pp span{display:block;font-size:13px;font-weight:600}
+.pp b{display:block;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.03em;margin-top:6px}
+.pp .in b{color:var(--blue)}
+.pp .net{background:var(--navy);border-color:var(--navy)}.pp .net span{color:#C7CEE6}.pp .net b{color:#fff}
+.contact{background:var(--navy);color:#C7CEE6;border-radius:20px;padding:28px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.contact h3{color:#fff;font-size:22px}
+.disc{font-size:12.5px;color:var(--muted);margin-top:18px}
+footer{background:var(--navy-d);color:#A3ABC4;font-size:13px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:20px;width:auto;color:#fff}
+dialog{border:0;padding:0;border-radius:20px;width:min(860px,calc(100% - 16px));max-width:calc(100% - 16px);max-height:calc(100dvh - 16px);overflow:auto}
+dialog::backdrop{background:rgba(3,8,31,.55)}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:24px}}
+@media (max-width:560px){.pp,.zk{grid-template-columns:1fr}.contact{padding:22px}}
+.zlink{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:22px}
+@media (max-width:560px){.zlink .btn{width:100%}}
+.hero-g{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero-g>*{min-width:0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.fig{background:var(--navy);color:#C7CEE6;border-radius:24px;padding:26px;box-shadow:0 24px 60px rgba(6,16,49,.22);position:relative;overflow:hidden}
+.fig::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(125,150,251,.35),transparent 70%);pointer-events:none}
+.badge{display:inline-block;font-size:12px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:5px 10px;border-radius:999px;position:relative;z-index:1}
+.fig-list{margin:0;border-top:1px solid rgba(255,255,255,.14)}
+.fig-list div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.fig-list dt{font-size:14px}
+.fig-list dd{margin:0;color:#fff;font-weight:600;font-size:18px;text-align:right;letter-spacing:-.01em}
+.fig-list dd small{display:block;font-size:12px;font-weight:400;color:#9FA9CC}
+.fig-note{font-size:12.5px;color:#9FA9CC;margin:14px 0 0}
+{{^paquetizado}}.cbar{display:none!important}
+{{/paquetizado}}@media (max-width:860px){.hero-g{grid-template-columns:1fr;gap:28px}}
+.cron{background:#111214;border-radius:20px;padding:24px 24px 18px;color:#A1A6B2;margin-top:6px}
+.cron-h{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between}
+.cron-t{margin:0;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#B9BDC7}
+{{^paquetizado}}.cron-ctl{display:none}
+{{/paquetizado}}.cron-lg{display:flex;gap:18px;justify-content:flex-end;margin:14px 0 4px;font-size:14px;color:#C9CDD5}
+.cron-lg span::before{content:"";display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:7px;vertical-align:-2px}
+.cron-lg .neg::before{background:#EF6F86}.cron-lg .pos::before{background:#6EDC98}.cron-lg .sub::before{background:#4F6BFF}
+.cron-sc{overflow-x:auto}
+.cron-ch{position:relative;min-width:560px;height:360px;display:grid;grid-template-columns:repeat(6,1fr)}
+.cron-ch .ax{position:absolute;left:0;right:0;border-top:1px solid #34373E}
+.cron-ch .col{position:relative}
+.cron-ch .b{position:absolute;left:50%;transform:translateX(-50%);width:min(56%,64px);border-radius:7px}
+.cron-ch .b.n{background:linear-gradient(180deg,#EF6F86,#5A2B36);border-radius:0 0 8px 8px}
+.cron-ch .b.p{background:linear-gradient(0deg,#6EDC98,#2D5C45);border-radius:8px 8px 0 0}
+.cron-ch .b.s{background:linear-gradient(90deg,#6CC3E3,#3554FF);border-radius:8px 8px 0 0}
+.cron-ch .b.s.neg{border-radius:0 0 8px 8px}
+.cron-ch .v{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;font-weight:700;font-size:14px;letter-spacing:.01em}
+.cron-ch .v.n{color:#EF6F86}.cron-ch .v.p{color:#6EDC98}.cron-ch .v.s{color:#5B76FF}
+.cron-ch .q{position:absolute;bottom:0;left:0;right:0;text-align:center;font-size:14px;color:#A1A6B2}
+.cron-ch .q.s{color:#4F6BFF;font-weight:700}
+.cron-n{font-size:12.5px;color:#7D828E;margin:10px 0 0}
+@media (max-width:560px){.cron{padding:18px 14px 14px;border-radius:16px}.cron-lg{justify-content:flex-start;font-size:12.5px}.cron-ch .v{font-size:12px}}
+.kp3{display:grid;grid-template-columns:1fr;gap:0;margin:18px 0 6px;position:relative}
+.kp3 div{padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp3 span{display:block;font-size:13px;font-weight:600}
+.kp3 b{display:block;color:#fff;font-size:28px;font-weight:600;letter-spacing:-.03em;line-height:1.1;margin-top:4px}
+.kp3 small{display:block;font-size:12px;color:#9FA9CC;margin-top:2px}
+.kp3 .hl b{font-size:clamp(40px,5vw,56px);letter-spacing:-.04em}
+.kp3 .hl span{color:#7D96FB}
+.mot{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.mot div{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:18px}
+.mot h3{font-size:16px;margin:8px 0 6px}
+.mot p{font-size:14px;margin:0}
+.mot i{font-style:normal;font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.04em;text-transform:uppercase}
+.comp-g{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 18px}
+.comp-g div{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:16px}
+.comp-g b{display:block;font-size:24px;letter-spacing:-.02em}
+.comp-g span{display:block;font-size:13px;margin-top:4px}
+@media (max-width:860px){.mot{grid-template-columns:1fr}.comp-g{grid-template-columns:1fr 1fr}}
+.draft{background:#FFF4D6;color:#5C4400;font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid #F1D98E}
+@page{size:A4;margin:12mm}
+@media print{.draft{display:none}}
+{{#paquetizado}}/* Modo paquetizado: packs, comparador y fichas */
+.cron-ctl{display:flex;align-items:center;gap:8px;font-size:13px;color:#A1A6B2}
+.cron-ctl select{font:inherit;font-size:13px;font-weight:600;color:#E4E6EB;background:#1D1F23;border:1px solid #34373E;border-radius:999px;padding:7px 12px;cursor:pointer}
+.pk{margin-top:22px;border:1px solid var(--rule);border-radius:16px;background:#fff}
+.pk>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;font-weight:600;color:var(--navy);border-radius:16px}
+.pk>summary::-webkit-details-marker{display:none}
+.pk>summary svg{flex:none;transition:transform .2s}
+.pk[open]>summary{border-bottom:1px solid var(--rule);border-radius:16px 16px 0 0}
+.pk[open]>summary svg{transform:rotate(180deg)}
+.pk-in{padding:18px 20px 20px}
+.pk-tools{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--rule);background:#fff;color:var(--navy);cursor:pointer}
+.chip:hover{border-color:var(--navy)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.pk-sort{display:flex;align-items:center;gap:8px;font-size:13px}
+.pk-sort select{font:inherit;font-size:13px;font-weight:600;color:var(--navy);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:7px 12px;cursor:pointer}
+.pkt tbody tr{cursor:pointer}
+.pkt tbody tr:hover td{background:var(--cream)}
+.pkt tbody tr.on td{background:#EEF1FE}
+.pkt .ck{width:40px;padding-right:0}
+.ck input{width:16px;height:16px;margin:0;vertical-align:-3px;accent-color:var(--blue);cursor:pointer}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;flex:none}
+.mixt{color:var(--muted);font-size:12.5px}
+.tirc{display:inline-block;padding:2px 9px;border-radius:999px;color:var(--navy);font-weight:600}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.cbar{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:45;display:none;align-items:center;gap:12px;width:max-content;max-width:calc(100% - 24px);background:var(--navy);color:#C7CEE6;font-size:13px;padding:10px 10px 10px 16px;border-radius:999px;box-shadow:0 16px 40px rgba(6,16,49,.3)}
+.cbar.show{display:flex}
+.cdots{display:flex;gap:4px}
+.cdots i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:11px;color:var(--navy)}
+.cbar .x{font:inherit;font-weight:600;background:none;border:0;color:#C7CEE6;cursor:pointer;padding:8px}
+.cbar .x:hover{color:#fff}
+#cdl,#dlg{padding:26px;position:fixed}
+.dx{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);background:#fff;color:var(--navy);font-size:20px;line-height:1;cursor:pointer}
+.dx:hover{border-color:var(--navy)}
+#d-t{display:flex;align-items:center;font-size:22px;padding-right:44px}
+#d-s{margin:6px 0 16px;font-size:14px}
+.dk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.dk div{background:var(--cream);border-radius:12px;padding:12px}
+.dk span{display:block;font-size:12px}
+.dk b{display:block;font-size:18px;letter-spacing:-.02em}
+.xc{display:inline-block;padding:1px 8px;border-radius:6px;font-size:12.5px;font-weight:600;color:var(--navy)}
+.cmp{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:12px;margin:8px 0 4px}
+.cmp>div{border:1px solid var(--rule);border-radius:14px;overflow:hidden}
+.ch{padding:12px 14px;color:var(--navy)}
+.ch b{display:block;font-size:17px}
+.ch span{font-size:12.5px}
+.cmp dl{margin:0;padding:4px 14px 12px}
+.cmp dl>div{padding:8px 0;border-bottom:1px solid var(--rule)}
+.cmp dl>div:last-child{border-bottom:0}
+.cmp dt{font-size:12px}
+.cmp dd{margin:2px 0 0;font-weight:600;color:var(--navy);font-size:15px}
+.cmp dd.best::after{content:" ★";color:var(--blue)}
+.tbar{height:6px;border-radius:3px;background:var(--cream-d);margin-top:6px;overflow:hidden}
+.tbar i{display:block;height:100%;border-radius:3px}
+@media (max-width:560px){.dk{grid-template-columns:1fr 1fr}.cmp{grid-template-columns:minmax(0,1fr)}#cdl,#dlg{padding:20px 16px}.pk>summary,.pk-in{padding-left:14px;padding-right:14px}.cbar{gap:8px;padding-left:12px}.cbar #cn{display:none}}
+@media print{.cbar{display:none!important}}
+{{/paquetizado}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="ph-logo" viewBox="12 12 1801 392"><path fill="currentColor" fill-rule="evenodd" d="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM971,357L971,312L979,319C988,328 998,333 1009,336C1020,338 1042,337 1052,334C1078,325 1097,305 1105,276C1107,267 1107,263 1107,250C1108,225 1103,209 1092,193C1077,171 1054,160 1026,160C1007,160 992,166 979,179C974,184 971,186 971,185C970,185 969,179 968,173L967,162L951,162L935,162L935,282C935,348 935,402 936,402C936,403 944,403 954,403L971,403L971,357ZM844,335C856,333 871,326 880,318C891,308 902,292 906,275C908,269 908,265 908,248C908,231 908,229 906,220C893,181 861,158 818,160C778,162 749,183 738,220C735,230 734,253 736,266C739,287 749,305 764,318C773,325 788,333 800,335C812,338 831,338 844,335ZM1460,335C1484,330 1504,315 1513,292C1515,288 1516,283 1517,281L1517,277L1499,277C1487,277 1481,277 1481,278C1481,281 1475,291 1469,296C1460,305 1446,309 1432,307C1419,305 1413,302 1405,294C1396,286 1393,277 1390,262L1390,257L1455,257L1520,256L1520,244C1520,238 1520,230 1519,226C1514,200 1500,180 1478,169C1465,163 1456,161 1438,161C1419,160 1413,162 1398,168C1377,178 1364,195 1356,219C1354,227 1354,228 1354,248C1354,269 1354,270 1356,278C1366,310 1388,330 1419,335C1430,337 1450,337 1460,335ZM1753,334C1769,329 1785,319 1795,307C1800,300 1808,284 1811,274C1812,269 1812,264 1812,248C1812,230 1812,228 1810,220C1799,184 1771,163 1732,160C1713,159 1693,164 1678,172C1669,178 1657,190 1651,200C1642,215 1638,232 1639,254C1640,269 1642,280 1649,292C1659,313 1675,326 1697,333C1708,336 1713,337 1730,337C1742,336 1747,336 1753,334ZM485,293L485,250L496,250C502,249 516,249 529,249C561,249 573,246 589,236C611,221 622,194 619,164C616,134 599,113 569,103C557,99 546,98 489,98L446,98L446,217L446,336L465,336L484,336L485,293ZM678,319C679,309 679,287 679,269C679,233 680,227 685,217C689,209 697,202 705,199C709,197 713,197 724,196L737,196L737,179L737,162L731,162C721,162 710,164 704,166C696,169 687,176 683,182C681,185 679,187 679,187C678,187 675,167 675,164C675,162 674,162 658,162L642,162L642,248L642,335L651,335C656,335 664,336 669,336L678,336L678,319ZM1176,284L1176,232L1230,232L1284,232L1284,283L1285,335L1299,335C1306,336 1315,336 1318,336L1323,336L1323,217L1323,98L1304,98L1285,98L1284,148L1284,198L1230,198L1176,198L1176,148L1176,98L1156,98L1137,98L1137,216C1137,281 1137,335 1138,335C1138,336 1147,336 1157,336L1176,336L1176,284ZM1582,302C1583,284 1583,262 1583,253C1583,230 1586,218 1595,209C1603,199 1613,196 1631,196L1641,196L1641,179L1641,162L1630,162C1618,163 1611,165 1603,169C1597,172 1589,179 1586,184C1585,185 1583,187 1583,187C1583,186 1582,181 1581,174L1579,162L1562,162L1546,162L1546,248C1546,296 1546,335 1547,335C1547,336 1555,336 1565,336L1582,336L1582,302ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM1014,306C998,303 986,295 978,280C969,263 969,236 977,218C982,208 993,198 1003,195C1021,188 1040,191 1053,204C1061,211 1064,217 1068,226C1070,234 1070,236 1070,248C1070,261 1070,263 1068,271C1063,284 1055,294 1045,300C1036,305 1023,308 1014,306ZM809,305C793,300 781,288 775,271C772,261 771,244 773,233C778,211 794,195 814,192C824,191 835,192 843,196C850,199 861,209 865,217C872,230 874,251 870,266C866,285 851,301 833,305C826,306 815,306 809,305ZM1712,304C1703,301 1698,298 1692,292C1681,281 1677,269 1677,248C1677,236 1677,234 1679,226C1683,217 1685,213 1691,206C1697,200 1702,197 1708,194C1720,190 1737,191 1748,196C1760,202 1771,216 1774,231C1777,239 1777,259 1774,267C1770,282 1761,294 1747,301C1739,305 1738,305 1728,306C1720,306 1716,306 1712,304ZM1395,229C1391,229 1391,228 1394,220C1400,201 1417,190 1438,190C1456,190 1470,198 1478,213C1480,218 1483,228 1483,229C1482,230 1399,230 1395,229ZM485,174L485,132L511,132C526,132 541,132 544,133C559,135 572,145 577,157C579,162 579,165 579,174C579,185 579,186 576,192C573,200 567,206 560,210C550,215 547,215 515,215L485,215L485,174ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z"/></symbol></defs></svg>
+{{#borrador}}<div class="draft">{{borrador_texto}}</div>
+{{/borrador}}<header class="bar"><div class="wrap">
+<a class="logo" href="#top" aria-label="PropHero, inicio"><svg viewBox="12 12 1801 392" aria-hidden="true"><use href="#ph-logo"/></svg></a>
+<button class="btn line" type="button" id="pdf" aria-label="Descargar en PDF"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Descargar PDF</span></button>
+<a class="btn" href="{{wa_url}}" target="_blank" rel="noopener">Solicitar información</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap hero-g">
+<div class="hero-l">
+<p class="eyebrow">Proyecto de inversión · Value Partner</p>
+<h1>{{nombre}}<span>{{subtitulo}}</span></h1>
+<p class="lede">{{lede}}</p>
+<div class="facts">
+<span>Ubicación<b>{{f_ubicacion}}</b></span>
+<span>Tipologías<b>{{f_tipologias}}</b></span>
+<span>Garajes<b>{{f_garajes}}</b></span><span>Trasteros<b>{{f_trasteros}}</b></span><span>Financiación<b>{{f_financiacion}}</b></span>
+</div>
+<div class="hero-cta"><a class="btn" href="#pagos">Ver plan de pagos</a><a class="btn line" href="#zona">Por qué {{nombre}}</a></div>
+</div>
+<aside class="fig" aria-label="Cifras principales del proyecto">
+<div class="fig-top"><span class="badge">Rangos estimados · precomercialización</span></div>
+<div class="kp3">
+<div><span>Total investment</span><b id="k-c"></b><small id="k-cs"></small></div>
+<div class="hl"><span>Yield estimado</span><b id="k-r"></b><small>Beneficio sobre inversión sin IVA</small></div>
+<div><span>Beneficio estimado</span><b id="k-b"></b><small>Antes de impuestos</small></div>
+</div>
+<dl class="fig-list">
+<div><dt>TIR estimada</dt><dd id="k-t"></dd></div>
+<div><dt>Listas para alquilar</dt><dd>{{listas_valor}}{{listas_nota_html}}</dd></div>
+</dl>
+<p class="fig-note">Rangos estimados del proyecto, provisionales hasta cerrar el modelo final.</p>
+</aside>
+</div></div>
+<section id="zona"><div class="wrap">
+<p class="eyebrow">Por qué {{nombre}}</p>
+<div class="two">
+<div>
+<h2>{{zona_titular}}</h2>
+<p>{{zona_texto}}</p>
+{{zona_distancias}}
+</div>
+<div class="zk">
+{{zona_kpis}}
+</div>
+</div>
+<div class="mot">
+{{zona_bloques}}
+</div>
+<div class="zlink"><a class="btn line" href="/zona.html">Ver información ampliada de la zona <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a></div>
+<p class="src">{{zona_fuentes}}</p>
+</div></section>
+<section id="pagos"><div class="wrap">
+<p class="eyebrow">Plan de pagos</p>
+<h2>Cuándo se aporta y cuándo se recupera</h2>
+<div class="pp">
+<div><span>Aportas</span><b id="p-a"></b></div>
+<div class="in"><span>Recibes</span><b id="p-r"></b></div>
+<div class="net"><span>Ganancia neta</span><b id="p-n"></b></div>
+</div>
+<div class="cron">
+<div class="cron-h">
+<p class="cron-t" id="cr-t">Cronograma de pagos</p>
+{{#paquetizado}}<div class="cron-ctl"><label for="cr-p">Ver</label><select id="cr-p"></select></div>
+{{/paquetizado}}</div>
+<div class="cron-lg"><span class="neg">Negativo</span><span class="pos">Positivo</span><span class="sub">Subtotal</span></div>
+<div class="cron-sc"><div class="cron-ch" id="cr-ch" role="img" aria-label="Cronograma trimestral de pagos y cobros"></div></div>
+<p class="cron-n">Flujos trimestrales del modelo financiero, IVA incluido. El subtotal es el resultado neto de caja.</p>
+</div>
+<p class="src">Importes del proyecto completo según el modelo financiero. Cifras provisionales de precomercialización, sujetas a cambios.</p>
+</div></section>
+{{#unico}}<section id="edificio" class="mist"><div class="wrap">
+<p class="eyebrow">El edificio</p>
+<h2>Un único producto: el edificio completo</h2>
+<p class="lede" style="margin-top:0">{{edificio_texto}}</p>
+<div class="comp-g">
+<div><b>{{n_viviendas}}</b><span>{{edificio_etiqueta_viviendas}}</span></div>
+<div><b>{{m2_total}} m²</b><span>Superficie construida</span></div>
+<div><b>{{f_trasteros}}</b><span>Trasteros</span></div>
+<div><b>{{listas_valor}}</b><span>Listas para alquilar (estimado)</span></div>
+</div>
+<div class="tw"><table>
+<thead><tr><th>Tipología</th><th class="n">Viviendas</th><th class="n">Superficie media</th><th class="n">Precio medio de mercado</th><th class="n">€/m²</th></tr></thead>
+<tbody class="static">
+{{comp_filas}}
+</tbody>
+<tfoot>{{comp_total}}</tfoot>
+</table></div>
+<p class="src">{{edificio_nota}}</p>
+</div></section>
+{{/unico}}{{#paquetizado}}<section id="packs" class="mist"><div class="wrap">
+<p class="eyebrow">Packs</p>
+<h2>El proyecto, también por packs</h2>
+<p class="lede" style="margin-top:0">La opción principal es el proyecto completo. Para quien prefiera una entrada menor, el edificio se divide en {{n_packs}} packs con sus viviendas, superficies y precios de mercado según el modelo financiero.</p>
+<details class="pk" id="pk"><summary><span>Ver los {{n_packs}} packs individualizados</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary>
+<div class="pk-in">
+<div class="pk-tools">
+<div class="chips" role="group" aria-label="Filtrar packs"><button class="chip" type="button" data-f="all" aria-pressed="true">Todos</button><button class="chip" type="button" data-f="est" aria-pressed="false">Estudios</button><button class="chip" type="button" data-f="dorm" aria-pressed="false">1 y 2 dorm.</button></div>
+<label class="pk-sort">Ordenar por <select id="sort"><option value="id">Nº de pack</option><option value="t">TIR</option><option value="r">Yield</option><option value="b">Beneficio</option><option value="c">Inversión</option></select></label>
+</div>
+<div class="tw"><table class="pkt">
+<thead><tr><th class="ck"><span class="sr">Comparar</span></th><th>Pack</th><th>Viviendas</th><th class="n">m²</th><th class="n">Inversión</th><th class="n">Ventas</th><th class="n">Beneficio</th><th class="n">Yield</th><th class="n">TIR</th></tr></thead>
+<tbody id="rows"></tbody>
+<tfoot id="tot"></tfoot>
+</table></div>
+<p class="src">Marca hasta 3 packs para compararlos y pulsa una fila para ver sus viviendas. Inversión con IVA; ventas a precio de mercado, según el modelo financiero.</p>
+</div>
+</details>
+</div></section>
+{{/paquetizado}}<div id="producto-slot"></div>
+<section id="cierre" style="padding-top:24px"><div class="wrap">
+<div class="contact"><div><h3>¿Te enviamos el proyecto completo?</h3><p style="margin:6px 0 0">Te mandamos el modelo financiero y la presentación, y resolvemos tus dudas.</p></div><a class="btn" href="{{wa_url}}" target="_blank" rel="noopener">Solicitar información</a></div>
+<p class="disc">Precomercialización: las cifras principales del proyecto se muestran en rangos estimados; {{#unico}}el plan de pagos y la composición del edificio{{/unico}}{{#paquetizado}}el plan de pagos y los packs{{/paquetizado}}, según el modelo financiero. Todas son provisionales y están sujetas a cambios hasta el cierre definitivo de los números. Este documento no constituye una oferta vinculante ni asesoramiento financiero, fiscal o legal.</p>
+</div></section>
+</main>
+<footer><div class="wrap"><svg viewBox="12 12 1801 392" role="img" aria-label="PropHero"><use href="#ph-logo"/></svg><span>{{nombre_completo}}</span></div></footer>
+{{#paquetizado}}<div class="cbar" id="cbar" role="region" aria-label="Comparador de packs"><div class="cdots" id="cdots"></div><span id="cn" aria-live="polite"></span><button class="x" type="button" id="cclr">Quitar</button><button class="btn" type="button" id="cgo">Comparar</button></div>
+<dialog id="cdl" aria-label="Comparador de packs"><button type="button" class="dx" id="c-x" aria-label="Cerrar">×</button><h3 style="font-size:22px;padding-right:44px">Comparador de packs</h3><div id="c-b"></div></dialog>
+<dialog id="dlg" aria-labelledby="d-t"><h3 id="d-t"></h3><p id="d-s"></p><button type="button" class="dx" id="d-x" aria-label="Cerrar">×</button><div id="d-b"></div></dialog>
+{{/paquetizado}}<script src="/app.js"></script>
+<script src="/ui.js"></script>
+<script>
+/* Rangos de la tarjeta principal fijados por dirección (project.json → rangos). Resto: Excel. */
+const RANGOS={{rangos_js}};
+document.getElementById('k-r').textContent=RANGOS.yield;
+document.getElementById('k-t').textContent=RANGOS.tir;
+document.getElementById('k-b').textContent=RANGOS.beneficio;
+</script>
+</body>
+</html>
