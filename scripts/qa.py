@@ -248,13 +248,15 @@ def main():
             inf.check(ok2, 'el comparador funciona con 2 packs')
             inf.check(pg.locator('#c-b dd.best').count() > 0, 'el comparador marca ★ el mejor valor')
             pg.keyboard.press('Escape')
-            boxes.nth(2).check()
-            pg.click('#cgo')
-            ok3 = pg.evaluate('() => document.getElementById("cdl").open') and pg.locator('#c-b .cmp > div').count() == 3
-            inf.check(ok3, 'el comparador funciona con 3 packs')
-            pg.keyboard.press('Escape')
-            boxes.nth(3).click()
-            inf.check(pg.locator('#rows input:checked').count() == 3, 'el comparador no admite un 4.º pack')
+            if len(packs) >= 3:
+                boxes.nth(2).check()
+                pg.click('#cgo')
+                ok3 = pg.evaluate('() => document.getElementById("cdl").open') and pg.locator('#c-b .cmp > div').count() == 3
+                inf.check(ok3, 'el comparador funciona con 3 packs')
+                pg.keyboard.press('Escape')
+            if len(packs) >= 4:
+                boxes.nth(3).click()
+                inf.check(pg.locator('#rows input:checked').count() == 3, 'el comparador no admite un 4.º pack')
             pg.click('#cclr')
             pg.locator('#rows tr').nth(0).locator('td').nth(2).click()
             okd = pg.evaluate('() => document.getElementById("dlg").open')
