@@ -42,6 +42,11 @@ publicadas en Vercel, todas basadas en UNA ÚNICA PLANTILLA.
 - Este proyecto es exclusivamente de Prophero. No menciones, consultes ni uses información de otros proyectos, sesiones o cuentas de Claude Code.
 - Esta carpeta es una excepción: haz commit y push a GitHub después de cada cambio sin pedir confirmación.
 
+## Vercel
+
+- Cuenta de Vercel: la de Prophero (`hugogarcia-3760`, hugo.garcia@prophero.com), equipo `prop-hero1`, a través del conector de Vercel.
+- No uses la CLI `vercel` instalada en el Mac: está iniciada con otra cuenta.
+
 ## Fuentes de información (Google Drive)
 
 - Avenida Ciudad: https://drive.google.com/drive/folders/1nWbRtla_37qnwjbbgNBzckmIf41aPc1_
