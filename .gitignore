@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+
+# Archivos temporales y de bloqueo de Office / Keynote
+~$*
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.~lock.*#
+
+# Windows
+Thumbs.db
+desktop.ini
