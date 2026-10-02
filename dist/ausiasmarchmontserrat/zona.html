@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#061031">
+<link rel="icon" type="image/webp" href="/assets/mark.webp">
+<title>Montserrat · Información ampliada de la zona · PropHero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--navy:#061031;--navy-d:#03081F;--navy-l:#2A46B8;--blue:#0D35F0;--blue-l:#7D96FB;--blue-mid:#3355F5;--body:#4B5771;--muted:#8B93A6;--cream:#F4F6FB;--cream-d:#E7ECF7;--rule:#DCE2EF;--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:#fff;color:var(--body);font-family:var(--font);font-size:clamp(15px,1.05vw,16px);line-height:1.65;font-variant-numeric:tabular-nums;overflow-wrap:break-word}
+b,strong{font-weight:600;color:var(--navy)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:6px}
+h1,h2,h3{color:var(--navy);font-weight:600;letter-spacing:-.03em;line-height:1.14}
+h1{font-size:clamp(32px,5vw,52px);margin:0}h2{font-size:clamp(26px,3.2vw,38px);margin:0 0 16px;max-width:26ch}h3{font-size:17px;margin:0 0 6px}
+p{margin:0 0 14px}
+h1,h2,h3,p,td,th,.l{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,5vw,64px)}
+.wrap>*,.two>*,.kpis>*,.clocks>*,.sizes>*,.b>*,.y>*{min-width:0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{color:var(--navy);line-height:0;margin-right:auto}.logo svg{height:24px;width:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px;text-decoration:none;background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1px var(--rule)}
+.btn:hover{box-shadow:inset 0 0 0 1px var(--navy)}
+.head{background:var(--cream);padding:48px 0 36px;border-bottom:1px solid var(--rule)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--blue);margin:0 0 14px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--blue);border-radius:2px}
+section{padding:64px 0}
+section.mist{background:var(--cream)}
+.label{font-size:14px;font-weight:600;color:var(--blue);margin:0 0 12px}
+.narrow{max-width:66ch}
+.muted{color:var(--body)}
+.small{font-size:14px}
+.tw{overflow-x:auto;margin:20px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td{color:var(--navy)}
+th{font-size:12.5px;font-weight:600;color:var(--body);white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}
+td.n{font-weight:600}
+td .sub{display:block;font-size:13px;color:var(--body);margin-top:3px;font-weight:400}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media (max-width:880px){.two{grid-template-columns:1fr;gap:32px}}
+.quote{margin:44px 0 0;padding:30px 34px;border-radius:20px;background:var(--navy);color:#fff;font-size:clamp(21px,2.4vw,28px);font-weight:600;line-height:1.3;letter-spacing:-.02em;position:relative;overflow:hidden}
+.quote::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--blue)}
+.quote small{display:block;font-size:14px;font-weight:400;color:#C7CEE6;margin-top:12px;letter-spacing:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:36px 0}
+.kpis.k3{grid-template-columns:repeat(3,1fr)}
+.kpi{border:1px solid var(--rule);border-radius:16px;padding:22px;background:#fff}
+.kpi b{display:block;font-weight:600;color:var(--navy);font-size:32px;line-height:1.05;letter-spacing:-.03em}
+.kpi span{display:block;font-size:14px;color:var(--body);margin-top:10px;line-height:1.45}
+@media (max-width:860px){.kpis{grid-template-columns:1fr 1fr}.kpis.k3{grid-template-columns:1fr}}
+.map svg{width:100%;height:auto;display:block}
+.map text{font-family:var(--font);font-size:13px;fill:var(--navy);font-weight:600}
+.map .km{font-size:12px;fill:var(--body);font-weight:500}
+.zchart svg{width:100%;height:auto;display:block}
+.zchart text{font-family:var(--font);font-size:12px;fill:var(--body)}
+.bars{display:grid;gap:14px;margin:26px 0 12px}
+.b{display:grid;grid-template-columns:210px 1fr;gap:16px;align-items:center}
+.b .l{font-size:15px;font-weight:600;color:var(--navy);line-height:1.3}
+.b .l small{display:block;font-weight:400;color:var(--body);font-size:13px}
+.b .track{height:40px;border-radius:10px;background:#fff;border:1px solid var(--rule)}
+.b .fill{height:100%;border-radius:10px;background:var(--cream-d);color:var(--navy);display:flex;align-items:center;justify-content:flex-end;padding:0 14px;font-weight:600;font-size:14px;min-width:max-content}
+.b.cy .fill{background:var(--blue);color:#fff}
+.b.mg .fill{background:var(--navy);color:#fff}
+.b.hl .l{color:var(--blue)}
+@media (max-width:640px){.b{grid-template-columns:1fr;gap:6px}}
+.yield{display:grid;gap:12px;margin:0 0 24px}
+.y{display:grid;grid-template-columns:190px 1fr;gap:16px;align-items:center}
+.y .l{font-weight:600;color:var(--navy)}
+.y .track{height:50px;border-radius:12px;background:var(--cream)}
+.y .fill{height:100%;border-radius:12px;background:var(--cream-d);color:var(--navy);display:flex;align-items:center;justify-content:flex-end;padding:0 16px;font-weight:600;font-size:18px}
+.y.us .fill{background:var(--blue);color:#fff}
+@media (max-width:640px){.y{grid-template-columns:1fr;gap:6px}}
+.sizes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.size{border-radius:20px;padding:30px;background:var(--navy);color:#C7CEE6}
+.size.alt{background:#fff;color:var(--body);border:1px solid var(--rule)}
+.size b{display:block;font-size:clamp(52px,6.5vw,80px);font-weight:600;line-height:1;letter-spacing:-.04em;color:#fff}
+.size.alt b{color:var(--blue)}
+.size b small{font-size:.38em;font-weight:500;letter-spacing:0}
+.size p{margin:16px 0 0;font-size:15px}
+@media (max-width:760px){.sizes{grid-template-columns:1fr}}
+.clocks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.clock{border:1px solid var(--rule);border-radius:18px;padding:26px;background:#fff}
+.clock .ctag{font-size:13px;font-weight:600;color:var(--blue);margin:0 0 10px}
+.clock p{font-size:15px;margin:0}
+@media (max-width:880px){.clocks{grid-template-columns:1fr}}
+@media (max-width:520px){.kpi b{font-size:28px}.quote{padding:24px 22px;font-size:20px}.size{padding:24px}.bar .btn span{display:none}}
+.zsub{padding:64px 0}
+footer{background:var(--navy-d);color:#A3ABC4;font-size:13px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer svg{height:20px;width:auto;color:#fff}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="ph-logo" viewBox="12 12 1801 392"><path fill="currentColor" fill-rule="evenodd" d="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM971,357L971,312L979,319C988,328 998,333 1009,336C1020,338 1042,337 1052,334C1078,325 1097,305 1105,276C1107,267 1107,263 1107,250C1108,225 1103,209 1092,193C1077,171 1054,160 1026,160C1007,160 992,166 979,179C974,184 971,186 971,185C970,185 969,179 968,173L967,162L951,162L935,162L935,282C935,348 935,402 936,402C936,403 944,403 954,403L971,403L971,357ZM844,335C856,333 871,326 880,318C891,308 902,292 906,275C908,269 908,265 908,248C908,231 908,229 906,220C893,181 861,158 818,160C778,162 749,183 738,220C735,230 734,253 736,266C739,287 749,305 764,318C773,325 788,333 800,335C812,338 831,338 844,335ZM1460,335C1484,330 1504,315 1513,292C1515,288 1516,283 1517,281L1517,277L1499,277C1487,277 1481,277 1481,278C1481,281 1475,291 1469,296C1460,305 1446,309 1432,307C1419,305 1413,302 1405,294C1396,286 1393,277 1390,262L1390,257L1455,257L1520,256L1520,244C1520,238 1520,230 1519,226C1514,200 1500,180 1478,169C1465,163 1456,161 1438,161C1419,160 1413,162 1398,168C1377,178 1364,195 1356,219C1354,227 1354,228 1354,248C1354,269 1354,270 1356,278C1366,310 1388,330 1419,335C1430,337 1450,337 1460,335ZM1753,334C1769,329 1785,319 1795,307C1800,300 1808,284 1811,274C1812,269 1812,264 1812,248C1812,230 1812,228 1810,220C1799,184 1771,163 1732,160C1713,159 1693,164 1678,172C1669,178 1657,190 1651,200C1642,215 1638,232 1639,254C1640,269 1642,280 1649,292C1659,313 1675,326 1697,333C1708,336 1713,337 1730,337C1742,336 1747,336 1753,334ZM485,293L485,250L496,250C502,249 516,249 529,249C561,249 573,246 589,236C611,221 622,194 619,164C616,134 599,113 569,103C557,99 546,98 489,98L446,98L446,217L446,336L465,336L484,336L485,293ZM678,319C679,309 679,287 679,269C679,233 680,227 685,217C689,209 697,202 705,199C709,197 713,197 724,196L737,196L737,179L737,162L731,162C721,162 710,164 704,166C696,169 687,176 683,182C681,185 679,187 679,187C678,187 675,167 675,164C675,162 674,162 658,162L642,162L642,248L642,335L651,335C656,335 664,336 669,336L678,336L678,319ZM1176,284L1176,232L1230,232L1284,232L1284,283L1285,335L1299,335C1306,336 1315,336 1318,336L1323,336L1323,217L1323,98L1304,98L1285,98L1284,148L1284,198L1230,198L1176,198L1176,148L1176,98L1156,98L1137,98L1137,216C1137,281 1137,335 1138,335C1138,336 1147,336 1157,336L1176,336L1176,284ZM1582,302C1583,284 1583,262 1583,253C1583,230 1586,218 1595,209C1603,199 1613,196 1631,196L1641,196L1641,179L1641,162L1630,162C1618,163 1611,165 1603,169C1597,172 1589,179 1586,184C1585,185 1583,187 1583,187C1583,186 1582,181 1581,174L1579,162L1562,162L1546,162L1546,248C1546,296 1546,335 1547,335C1547,336 1555,336 1565,336L1582,336L1582,302ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM1014,306C998,303 986,295 978,280C969,263 969,236 977,218C982,208 993,198 1003,195C1021,188 1040,191 1053,204C1061,211 1064,217 1068,226C1070,234 1070,236 1070,248C1070,261 1070,263 1068,271C1063,284 1055,294 1045,300C1036,305 1023,308 1014,306ZM809,305C793,300 781,288 775,271C772,261 771,244 773,233C778,211 794,195 814,192C824,191 835,192 843,196C850,199 861,209 865,217C872,230 874,251 870,266C866,285 851,301 833,305C826,306 815,306 809,305ZM1712,304C1703,301 1698,298 1692,292C1681,281 1677,269 1677,248C1677,236 1677,234 1679,226C1683,217 1685,213 1691,206C1697,200 1702,197 1708,194C1720,190 1737,191 1748,196C1760,202 1771,216 1774,231C1777,239 1777,259 1774,267C1770,282 1761,294 1747,301C1739,305 1738,305 1728,306C1720,306 1716,306 1712,304ZM1395,229C1391,229 1391,228 1394,220C1400,201 1417,190 1438,190C1456,190 1470,198 1478,213C1480,218 1483,228 1483,229C1482,230 1399,230 1395,229ZM485,174L485,132L511,132C526,132 541,132 544,133C559,135 572,145 577,157C579,162 579,165 579,174C579,185 579,186 576,192C573,200 567,206 560,210C550,215 547,215 515,215L485,215L485,174ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z"/></symbol><symbol id="ph-mark" viewBox="12 12 308 392"><path fill="currentColor" fill-rule="evenodd" d="M64,391C87,384 98,380 99,378C101,377 102,374 102,371C103,369 103,332 103,290C103,202 104,209 94,205C77,199 28,183 23,182C18,182 18,182 15,185L12,188L12,293L12,398L14,400C16,403 17,403 23,403C29,402 37,400 64,391ZM205,333C207,332 214,322 222,311C268,248 314,184 316,180C321,173 320,171 307,152C275,107 272,103 267,102C260,101 265,93 164,235C123,292 119,298 119,302C119,309 120,310 153,321C202,337 201,337 205,333ZM40,158C63,151 139,126 200,106C240,93 247,90 250,88C254,84 254,80 249,72C245,66 216,26 210,17L206,12L197,12C189,13 182,15 108,39C63,54 25,67 21,68C11,72 12,68 12,116C12,156 12,157 14,159C16,162 19,164 21,164C22,164 30,161 40,158Z"/></symbol></defs></svg>
+<header class="bar"><div class="wrap">
+<a class="logo" href="/" aria-label="PropHero, volver al resumen"><svg viewBox="12 12 1801 392" aria-hidden="true"><use href="#ph-logo"/></svg></a>
+<a class="btn" href="/#zona"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Volver al resumen</span></a>
+</div></header>
+<main>
+<div class="head"><div class="wrap"><p class="eyebrow">Montserrat · Ausias March</p><h1>Información ampliada de la zona</h1><p style="margin:14px 0 0;max-width:60ch">Localización, demanda, precios, rentabilidad, producto, contexto nacional y por qué ahora.</p></div></div>
+<section class="zsub" id="tesis-detalle">
+<div class="wrap">
+<p class="label">La tesis en una página</p>
+<h2>Demanda que llega con capacidad de pago, sobre un parque que no está hecho para ella</h2>
+<div class="two">
+<div class="narrow">
+<p>Montserrat ya funciona hoy como mercado residencial. El precio de la vivienda transaccionada sube un 23,1&nbsp;% por m² en un año, la renta publicada un 34,6&nbsp;% y la rentabilidad bruta municipal se sitúa en el 8,71&nbsp;%, desde un precio de entrada todavía asequible.</p>
+<p>La demanda que empuja esos números es nueva. La población crece un 11,6&nbsp;% anual, con los tramos de 15 a 34 años por delante, y la renta media por hogar sube un 22,2&nbsp;%. No es especulación ni uso turístico: el 76&nbsp;% del parque es vivienda principal y solo hay 20 viviendas turísticas en todo el municipio.</p>
+<p>Existe además un desajuste de producto claro. La vivienda media tiene cinco habitaciones y la ocupan 1,3 personas. Lo que más se busca en alquiler es una vivienda de una habitación, y se alquila en 3,4 semanas. Falta oferta compacta y lista para entrar a vivir.</p>
+</div>
+<div class="tw" style="margin-top:0">
+<table>
+<thead><tr><th>Resumen de la oportunidad</th><th class="n">Cifra</th></tr></thead>
+<tbody>
+<tr><td>Precio de transacción<span class="sub">Vivienda media vendida en el trimestre, +9,9&nbsp;% interanual</span></td><td class="n">179.036 €</td></tr>
+<tr><td>Rentabilidad bruta<span class="sub">Sobre el conjunto del parque, frente al 6,5&nbsp;% nacional</span></td><td class="n">8,71 %</td></tr>
+<tr><td>Población<span class="sub">Crece un 11,6&nbsp;% anual; 25 a 34 años, +14,3&nbsp;%</span></td><td class="n">10.062</td></tr>
+<tr><td>Revalorización prevista a 3 años<span class="sub">Modelo residencial de PropHero · top 20&nbsp;% del ranking</span></td><td class="n">16,8 %</td></tr>
+<tr><td>Distancia a València<span class="sub">Por la CV-405 y el área metropolitana sur</span></td><td class="n">≈ 30 km</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="quote">Una vivienda aquí cuesta 5,6 años de renta del hogar. La media española es de 7,7 años.<small>Periodo de pago de la vivienda media · Brainsre y Banco de España</small></div>
+</div>
+</section>
+<section class="zsub mist" id="ubicacion">
+<div class="wrap">
+<p class="label">Localización</p>
+<h2>En la Vall dels Alcalans, a la salida del área metropolitana sur</h2>
+<div class="two">
+<div>
+<p class="narrow">Montserrat está en la Ribera Alta, en el valle que comparte con Real y Montroy. La CV-405 lo une con Picassent, su partido judicial, y con Torrent, la segunda ciudad del área metropolitana. Desde ahí, València, el aeropuerto y los polígonos del sur quedan a menos de media hora.</p>
+<div class="tw">
+<table>
+<thead><tr><th>Destino</th><th class="n">Distancia</th><th>Relevancia</th></tr></thead>
+<tbody>
+<tr><td>Picassent</td><td class="n">12 km</td><td>Partido judicial y servicios comarcales.</td></tr>
+<tr><td>Torrent</td><td class="n">15 km</td><td>Segunda ciudad del área metropolitana; conexión por la CV-405.</td></tr>
+<tr><td>Almussafes</td><td class="n">18 km</td><td>Polo industrial del sur de València, con la planta de Ford.</td></tr>
+<tr><td>Aeropuerto de València</td><td class="n">18 km</td><td>Accesibilidad para el inversor y para inquilinos que se reubican.</td></tr>
+<tr><td>València</td><td class="n">23 km</td><td>Capital y principal mercado de empleo; unos 30 km por carretera.</td></tr>
+</tbody>
+</table>
+<p class="muted small" style="margin-top:10px">Distancias aproximadas en línea recta.</p>
+</div>
+</div>
+<div class="map">
+<svg viewBox="0 0 520 470" role="img" aria-label="Esquema de situación: Montserrat al oeste; Picassent y Torrent al este; València y el aeropuerto al noreste; Almussafes al sureste.">
+<g stroke="var(--body)" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="4 6" fill="none">
+<line x1="70" y1="300" x2="402" y2="88"/><line x1="70" y1="300" x2="272" y2="150"/><line x1="70" y1="300" x2="281" y2="290"/><line x1="70" y1="300" x2="247" y2="50"/><line x1="70" y1="300" x2="347" y2="422"/>
+</g>
+<g fill="var(--navy)">
+<circle cx="402" cy="88" r="9"/><circle cx="272" cy="150" r="6"/><circle cx="281" cy="290" r="6"/><circle cx="247" cy="50" r="6"/><circle cx="347" cy="422" r="6"/>
+</g>
+<text x="416" y="93">València</text>
+<text x="284" y="155">Torrent</text>
+<text x="293" y="295">Picassent</text>
+<text x="259" y="55">Aeropuerto</text>
+<text x="359" y="427">Almussafes</text>
+<text class="km" x="238" y="190">23 km</text>
+<text class="km" x="160" y="214">15 km</text>
+<text class="km" x="190" y="312">12 km</text>
+<text class="km" x="118" y="170">18 km</text>
+<text class="km" x="196" y="378">18 km</text>
+<g transform="translate(40 228)">
+<path d="M30 0C13.4 0 0 13.4 0 30c0 22 30 50 30 50s30-28 30-50C60 13.4 46.6 0 30 0z" fill="var(--navy)"/>
+<use href="#ph-mark" x="17" y="12" width="26" height="33" style="color:#fff"/>
+</g>
+<text x="112" y="258" style="font-size:16px;font-weight:800">Montserrat</text>
+<text class="km" x="112" y="276">10.062 habitantes</text>
+</svg>
+<p class="muted small">Esquema de situación, no a escala exacta.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="zsub" id="demanda">
+<div class="wrap">
+<p class="label">La demanda</p>
+<h2>Un municipio que crece rápido, y crece joven</h2>
+<div class="kpis">
+<div class="kpi"><b>+11,6 %</b><span>Habitantes, interanual</span></div>
+<div class="kpi"><b>+17,3 %</b><span>Población de 15 a 24 años</span></div>
+<div class="kpi"><b>+22,2 %</b><span>Renta media por hogar, hasta 33.795&nbsp;€</span></div>
+<div class="kpi"><b>7,7 %</b><span>Tasa de desempleo, un 17,5&nbsp;% menos que hace un año</span></div>
+</div>
+<div class="two">
+<div class="narrow">
+<p>El crecimiento no es de jubilados que buscan segunda residencia: los tramos que más suben son los de 15 a 24 años (+17,3&nbsp;%) y de 25 a 34 (+14,3&nbsp;%), es decir, los hogares que se forman ahora y buscan su primera vivienda, casi siempre de alquiler.</p>
+<p>Llegan con capacidad de pago. El 67,6&nbsp;% de los declarantes son asalariados, la renta del hogar sube a doble dígito y el desempleo cae. Investmap resume el perfil en una línea: demanda creciente, alquiler que se absorbe en semanas y venta ágil.</p>
+</div>
+<div class="zchart">
+<p class="small muted" style="margin:0 0 8px;font-weight:600">Evolución, base 100 hace tres años</p>
+<svg viewBox="0 0 520 260" role="img" aria-label="Población y renta media crecen entre un 11 y un 12 por ciento en tres años; el desempleo se mantiene estable.">
+<g stroke="var(--rule)" stroke-dasharray="3 5">
+<line x1="44" y1="30" x2="500" y2="30"/><line x1="44" y1="110" x2="500" y2="110"/><line x1="44" y1="190" x2="500" y2="190"/>
+</g>
+<text x="36" y="34" text-anchor="end">113</text><text x="36" y="114" text-anchor="end">106</text><text x="36" y="194" text-anchor="end">99</text>
+<polyline fill="none" stroke="var(--blue)" stroke-width="3" stroke-linejoin="round" points="60,178 206,138 352,93 498,47"/>
+<polyline fill="none" stroke="var(--blue-l)" stroke-width="3" stroke-linejoin="round" points="60,178 206,116 352,116 498,58"/>
+<polyline fill="none" stroke="var(--muted)" stroke-dasharray="6 5" stroke-width="3" points="60,178 206,178 352,178 498,178"/>
+<g fill="var(--blue)"><circle cx="60" cy="178" r="4"/><circle cx="206" cy="138" r="4"/><circle cx="352" cy="93" r="4"/><circle cx="498" cy="47" r="4"/></g>
+<g fill="var(--blue-l)"><circle cx="206" cy="116" r="4"/><circle cx="352" cy="116" r="4"/><circle cx="498" cy="58" r="4"/></g>
+<text x="60" y="222" text-anchor="middle">Hace 3 años</text><text x="206" y="222" text-anchor="middle">Hace 2</text><text x="352" y="222" text-anchor="middle">Hace 1</text><text x="498" y="222" text-anchor="end">Actual</text>
+<rect x="60" y="243" width="14" height="4" rx="2" fill="var(--blue)"/><text x="80" y="249">Población</text>
+<rect x="164" y="243" width="14" height="4" rx="2" fill="var(--blue-l)"/><text x="184" y="249">Renta media</text>
+<rect x="284" y="243" width="14" height="4" rx="2" fill="var(--muted)"/><text x="304" y="249">Desempleo</text>
+</svg>
+<p class="muted small">Fuente: Investmap de PropHero (lectura aproximada del gráfico).</p>
+</div>
+</div>
+</div>
+</section>
+<section class="zsub mist" id="precio">
+<div class="wrap">
+<p class="label">El precio</p>
+<h2>Asequible en términos absolutos y subiendo donde importa</h2>
+<div class="two">
+<div class="narrow">
+<p><b>Sube el volumen y sube el precio.</b> 59 transacciones en el trimestre, un 11,3&nbsp;% más que hace un año, todas de segunda mano. El precio transaccionado por m² sube un 23,1&nbsp;% y el tiempo de venta se ha acortado un 28,7&nbsp;%, hasta 3,97 meses.</p>
+<p><b>La obra nueva se ha despegado.</b> Lo poco que se publica como obra nueva pide 2.928&nbsp;€/m², un 71,5&nbsp;% más que hace un año y casi el doble de lo que se paga por la vivienda usada. La brecha entre lo que hay y lo que cuesta lo nuevo es la oportunidad.</p>
+</div>
+<div>
+<p class="small muted" style="margin:0;font-weight:600">Precio por vivienda completa</p>
+<div class="bars"><div class="b cy hl"><div class="l">Transacciones reales<small>+9,9 % anual</small></div><div class="track"><div class="fill" style="width:37.299166666666665%">179.036 €</div></div></div><div class="b "><div class="l">Publicado · segunda mano<small>+6,0 % anual</small></div><div class="track"><div class="fill" style="width:57.34354166666667%">275.249 €</div></div></div><div class="b mg"><div class="l">Publicado · obra nueva<small>+55,2 % anual</small></div><div class="track"><div class="fill" style="width:99.96875%">479.850 €</div></div></div></div>
+<p class="small muted" style="margin:28px 0 0;font-weight:600">Precio por m²</p>
+<div class="bars"><div class="b "><div class="l">Publicado · segunda mano<small>+16,7 % anual</small></div><div class="track"><div class="fill" style="width:46.209016393442624%">1.353 €</div></div></div><div class="b cy hl"><div class="l">Transacciones reales<small>+23,1 % anual</small></div><div class="track"><div class="fill" style="width:54.439890710382514%">1.594 €</div></div></div><div class="b mg"><div class="l">Publicado · obra nueva<small>+71,5 % anual</small></div><div class="track"><div class="fill" style="width:100%">2.928 €</div></div></div></div>
+<p class="muted small">Fuente: Brainsre, informe de municipio, 2T-2026.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="zsub" id="rentabilidad">
+<div class="wrap">
+<p class="label">Rentabilidad</p>
+<h2>Rentabilidad alta sobre un alquiler que se absorbe en semanas</h2>
+<div class="two">
+<div>
+<div class="yield"><div class="y "><div class="l">España<div class="small muted" style="font-weight:500">media nacional</div></div><div class="track"><div class="fill" style="width:68.42105263157895%">6,5 %</div></div></div><div class="y us"><div class="l">Montserrat<div class="small muted" style="font-weight:500">Brainsre, parque completo</div></div><div class="track"><div class="fill" style="width:91.6842105263158%">8,71 %</div></div></div><div class="y us"><div class="l">Montserrat<div class="small muted" style="font-weight:500">Investmap</div></div><div class="track"><div class="fill" style="width:93.6842105263158%">8,9 %</div></div></div></div>
+<p class="muted small">Rentabilidad bruta. Fuente: idealista (España), Investmap y Brainsre (municipio), 2T-2026.</p>
+</div>
+<div class="tw" style="margin-top:0">
+<table>
+<thead><tr><th>Renta mensual publicada</th><th class="n">€/mes</th><th class="n">Var. anual</th></tr></thead>
+<tbody>
+<tr><td>Vivienda de 1 habitación<span class="sub">Producto más demandado · Investmap</span></td><td class="n">737 €</td><td class="n">—</td></tr>
+<tr><td>Piso de 2 habitaciones</td><td class="n">712 €</td><td class="n">+11,7 %</td></tr>
+<tr><td>Casa de 3 habitaciones</td><td class="n">1.093 €</td><td class="n">—</td></tr>
+<tr><td>Casa de 4 habitaciones</td><td class="n">1.500 €</td><td class="n">+13,2 %</td></tr>
+<tr><td>Media publicada por m²</td><td class="n">9,82 €</td><td class="n">+34,6 %</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="kpis">
+<div class="kpi"><b>3,4 sem.</b><span>Para alquilar la vivienda de una habitación</span></div>
+<div class="kpi"><b>0 %</b><span>De anuncios de alquiler con rebaja de precio en el trimestre</span></div>
+<div class="kpi"><b>13,8 %</b><span>Del parque de viviendas está en alquiler</span></div>
+<div class="kpi"><b>32,7 %</b><span>Tasa de esfuerzo del alquiler, frente al 22,1&nbsp;% de la compra</span></div>
+</div>
+<p class="narrow muted">Alquilar ya cuesta más esfuerzo que comprar: una renta de 737&nbsp;€ por una vivienda de una habitación supera a la de un piso de dos (712&nbsp;€). El mercado está pagando una prima por el producto pequeño, precisamente el que menos abunda.</p>
+</div>
+</section>
+<section class="zsub mist" id="producto">
+<div class="wrap">
+<p class="label">El desajuste de producto</p>
+<h2>Lo que existe no es lo que se busca</h2>
+<p class="narrow">El parque de Montserrat se construyó para familias grandes y hoy lo ocupan hogares pequeños. El mercado vende y alquila un producto sustancialmente distinto del que se demanda.</p>
+<div class="sizes">
+<div class="size"><b>5 <small>habitaciones</small></b><p>Es la vivienda media del municipio, con 1,3 habitantes por vivienda. Lo que se vende tiene 112&nbsp;m² de media: casas grandes y antiguas.</p></div>
+<div class="size alt"><b>1 <small>habitación</small></b><p>Es el producto estrella del alquiler según Investmap, y se alquila en 3,4 semanas. En compra, el más buscado es la casa de menos de 70&nbsp;m².</p></div>
+</div>
+<div class="quote">«En Montserrat no falta gente que quiera vivir aquí. Falta la vivienda del tamaño de su hogar.»</div>
+</div>
+</section>
+<section class="zsub" id="contexto">
+<div class="wrap">
+<p class="label">Contexto nacional</p>
+<h2>Un déficit de oferta que no se corrige en este horizonte</h2>
+<div class="kpis k3">
+<div class="kpi"><b>750.000</b><span>Déficit acumulado de vivienda en España, 2021–2025</span></div>
+<div class="kpi"><b>240.000</b><span>Hogares nuevos formados en 2025</span></div>
+<div class="kpi"><b>92.000</b><span>Viviendas terminadas en 2025</span></div>
+</div>
+<p class="narrow"><b>El efecto expulsión.</b> El Banco de España describe cómo los hogares acaban viviendo donde pueden permitírselo y no donde está el trabajo. Es exactamente el flujo que explica el crecimiento de Montserrat: hogares del área metropolitana que salen de la primera corona buscando precio.</p>
+<p class="muted small">Fuente: Banco de España, Informe Anual 2025; BBVA Research, Observatorio Inmobiliario.</p>
+</div>
+</section>
+<section class="zsub mist" id="ahora">
+<div class="wrap">
+<p class="label">Momento de entrada</p>
+<h2>Por qué ahora</h2>
+<p class="narrow muted">Tres relojes corren a la vez en esta zona, y los tres van en la misma dirección.</p>
+<div class="clocks">
+<div class="clock"><p class="ctag">El reloj demográfico</p><h3>La demanda ya está aquí</h3><p>Un 11,6&nbsp;% más de población en un año, con los tramos jóvenes por delante. Son hogares que necesitan vivienda hoy, no dentro de cinco años.</p></div>
+<div class="clock"><p class="ctag">El reloj de la oferta</p><h3>La respuesta no puede ser rápida</h3><p>El 100&nbsp;% de lo que se vende es segunda mano y la obra nueva que se publica es cara y escasa. El producto compacto tarda años en llegar desde suelo.</p></div>
+<div class="clock"><p class="ctag">El reloj del precio</p><h3>Quien entre más tarde pagará más</h3><p>La transacción sube un 23,1&nbsp;% por m² y la renta publicada un 34,6&nbsp;%. Quien entre más tarde pagará más por la misma renta.</p></div>
+</div>
+<div class="tw" style="margin-top:56px">
+<table>
+<thead><tr><th>Qué nos haría cambiar de opinión</th><th>Lectura</th></tr></thead>
+<tbody>
+<tr><td>Freno del crecimiento de población</td><td>Un año de +11,6&nbsp;% puede no repetirse; la demanda de alquiler depende de que siga llegando población joven.</td></tr>
+<tr><td>Declaración de zona de mercado residencial tensionado</td><td>Limitaría el crecimiento de las rentas, hoy la principal palanca de la zona.</td></tr>
+<tr><td>Una oleada de obra nueva compacta</td><td>Resolvería la escasez de producto pequeño y reduciría la prima que hoy paga el alquiler de una habitación.</td></tr>
+<tr><td>Deterioro del empleo en el área metropolitana sur</td><td>Erosionaría la base de inquilinos de larga duración que sostiene el 8,71&nbsp;%.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted small narrow">Ninguna de estas cuatro señales está ocurriendo hoy. Todas son vigilables con datos públicos trimestrales.</p>
+</div>
+</section>
+<section><div class="wrap" style="text-align:center"><a class="btn" href="/#zona">Volver al resumen del proyecto</a></div></section>
+</main>
+<footer><div class="wrap"><svg viewBox="12 12 1801 392" role="img" aria-label="PropHero"><use href="#ph-logo"/></svg><span>Fuentes: Brainsre (2T-2026), Investmap de PropHero, Banco de España, BBVA Research</span></div></footer>
+</body>
+</html>
