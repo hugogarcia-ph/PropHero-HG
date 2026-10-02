@@ -17,3 +17,7 @@ Icon?
 # Windows
 Thumbs.db
 desktop.ini
+
+# Excel del modelo: se lee desde Drive, nunca se versiona
+projects/*/modelo.xlsx
+*.xlsx.tmp
